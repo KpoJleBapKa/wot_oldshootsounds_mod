@@ -1,0 +1,1217 @@
+[
+  {
+    "effect": "shot_Breda_auto",
+    "old": [
+      {
+        "effect": "shot_Breda_auto",
+        "path": "shot_Breda_auto/effects/shotSound",
+        "player_events": [
+          "wpn_automatic_PC"
+        ],
+        "npc_events": [
+          "wpn_automatic_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_Breda_auto",
+        "path": "shot_Breda_auto/effects/shotSound",
+        "player_events": [
+          "wpn_automatic_PC"
+        ],
+        "npc_events": [
+          "wpn_automatic_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_Gochkins_auto",
+    "old": [
+      {
+        "effect": "shot_Gochkins_auto",
+        "path": "shot_Gochkins_auto/effects/shotSound",
+        "player_events": [
+          "wpn_automatic_PC"
+        ],
+        "npc_events": [
+          "wpn_automatic_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_Gochkins_auto",
+        "path": "shot_Gochkins_auto/effects/shotSound",
+        "player_events": [
+          "wpn_automatic_PC"
+        ],
+        "npc_events": [
+          "wpn_automatic_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_KwK_L46",
+    "old": [
+      {
+        "effect": "shot_KwK_L46",
+        "path": "shot_KwK_L46/effects/shotSound",
+        "player_events": [
+          "wpn_small_PC"
+        ],
+        "npc_events": [
+          "wpn_small_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_KwK_L46",
+        "path": "shot_KwK_L46/effects/shotSound",
+        "player_events": [
+          "wpn_small_PC"
+        ],
+        "npc_events": [
+          "wpn_small_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_MTLS_auto",
+    "old": [
+      {
+        "effect": "shot_MTLS_auto",
+        "path": "shot_MTLS_auto/effects/shotSound",
+        "player_events": [
+          "wpn_automatic_PC"
+        ],
+        "npc_events": [
+          "wpn_automatic_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_MTLS_auto",
+        "path": "shot_MTLS_auto/effects/shotSound",
+        "player_events": [
+          "wpn_automatic_PC"
+        ],
+        "npc_events": [
+          "wpn_automatic_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_TNSH_auto",
+    "old": [
+      {
+        "effect": "shot_TNSH_auto",
+        "path": "shot_TNSH_auto/effects/shotSound",
+        "player_events": [
+          "wpn_automatic_PC"
+        ],
+        "npc_events": [
+          "wpn_automatic_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_TNSH_auto",
+        "path": "shot_TNSH_auto/effects/shotSound",
+        "player_events": [
+          "wpn_automatic_PC"
+        ],
+        "npc_events": [
+          "wpn_automatic_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_auto",
+    "old": [
+      {
+        "effect": "shot_auto",
+        "path": "shot_auto/effects/shotSound",
+        "player_events": [
+          "wpn_automatic_PC"
+        ],
+        "npc_events": [
+          "wpn_automatic_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_auto",
+        "path": "shot_auto/effects/shotSound",
+        "player_events": [
+          "wpn_automatic_PC"
+        ],
+        "npc_events": [
+          "wpn_automatic_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_ch41",
+    "old": [
+      {
+        "effect": "shot_ch41",
+        "path": "shot_ch41/effects/shotSound",
+        "player_events": [
+          "wpn_large_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_large_extra_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_ch41",
+        "path": "shot_ch41/effects/shotSound",
+        "player_events": [
+          "wpn_large_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_large_extra_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_large_L",
+    "old": [
+      {
+        "effect": "shot_dualgun1_large_L",
+        "path": "shot_dualgun1_large_L/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_large_L",
+        "path": "shot_dualgun1_large_L/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_large_R",
+    "old": [
+      {
+        "effect": "shot_dualgun1_large_R",
+        "path": "shot_dualgun1_large_R/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_large_R",
+        "path": "shot_dualgun1_large_R/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_large_mb_L",
+    "old": [
+      {
+        "effect": "shot_dualgun1_large_mb_L",
+        "path": "shot_dualgun1_large_mb_L/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_large_mb_L",
+        "path": "shot_dualgun1_large_mb_L/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_large_mb_R",
+    "old": [
+      {
+        "effect": "shot_dualgun1_large_mb_R",
+        "path": "shot_dualgun1_large_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_large_mb_R",
+        "path": "shot_dualgun1_large_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_main_L",
+    "old": [
+      {
+        "effect": "shot_dualgun1_main_L",
+        "path": "shot_dualgun1_main_L/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_main_L",
+        "path": "shot_dualgun1_main_L/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_main_R",
+    "old": [
+      {
+        "effect": "shot_dualgun1_main_R",
+        "path": "shot_dualgun1_main_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_main_R",
+        "path": "shot_dualgun1_main_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_main_mb_L",
+    "old": [
+      {
+        "effect": "shot_dualgun1_main_mb_L",
+        "path": "shot_dualgun1_main_mb_L/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_main_mb_L",
+        "path": "shot_dualgun1_main_mb_L/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_main_mb_R",
+    "old": [
+      {
+        "effect": "shot_dualgun1_main_mb_R",
+        "path": "shot_dualgun1_main_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_main_mb_R",
+        "path": "shot_dualgun1_main_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_mainext_L",
+    "old": [
+      {
+        "effect": "shot_dualgun1_mainext_L",
+        "path": "shot_dualgun1_mainext_L/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_mainext_L",
+        "path": "shot_dualgun1_mainext_L/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_mainext_R",
+    "old": [
+      {
+        "effect": "shot_dualgun1_mainext_R",
+        "path": "shot_dualgun1_mainext_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_mainext_R",
+        "path": "shot_dualgun1_mainext_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_mainext_mb_L",
+    "old": [
+      {
+        "effect": "shot_dualgun1_mainext_mb_L",
+        "path": "shot_dualgun1_mainext_mb_L/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_mainext_mb_L",
+        "path": "shot_dualgun1_mainext_mb_L/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun1_mainext_mb_R",
+    "old": [
+      {
+        "effect": "shot_dualgun1_mainext_mb_R",
+        "path": "shot_dualgun1_mainext_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun1_mainext_mb_R",
+        "path": "shot_dualgun1_mainext_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun_large_R",
+    "old": [
+      {
+        "effect": "shot_dualgun_large_R",
+        "path": "shot_dualgun_large_R/effects/shotSound",
+        "player_events": [
+          "wpn_large_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_large_dual_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun_large_R",
+        "path": "shot_dualgun_large_R/effects/shotSound",
+        "player_events": [
+          "wpn_large_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_large_dual_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun_large_mb_R",
+    "old": [
+      {
+        "effect": "shot_dualgun_large_mb_R",
+        "path": "shot_dualgun_large_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_large_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_large_dual_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun_large_mb_R",
+        "path": "shot_dualgun_large_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_large_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_large_dual_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun_main_R",
+    "old": [
+      {
+        "effect": "shot_dualgun_main_R",
+        "path": "shot_dualgun_main_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_main_dual_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun_main_R",
+        "path": "shot_dualgun_main_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_main_dual_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun_main_mb_R",
+    "old": [
+      {
+        "effect": "shot_dualgun_main_mb_R",
+        "path": "shot_dualgun_main_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_main_dual_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun_main_mb_R",
+        "path": "shot_dualgun_main_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_main_dual_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun_mainext_R",
+    "old": [
+      {
+        "effect": "shot_dualgun_mainext_R",
+        "path": "shot_dualgun_mainext_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_dual_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun_mainext_R",
+        "path": "shot_dualgun_mainext_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_dual_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_dualgun_mainext_mb_R",
+    "old": [
+      {
+        "effect": "shot_dualgun_mainext_mb_R",
+        "path": "shot_dualgun_mainext_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_dual_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_dualgun_mainext_mb_R",
+        "path": "shot_dualgun_mainext_mb_R/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_dual_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_dual_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_env_artillery",
+    "old": [
+      {
+        "effect": "shot_env_artillery",
+        "path": "shot_env_artillery/effects/shotSound",
+        "player_events": [
+          "wpn_huge_pc"
+        ],
+        "npc_events": [
+          "wpn_huge_npc"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_env_artillery",
+        "path": "shot_env_artillery/effects/shotSound",
+        "player_events": [
+          "wpn_huge_pc"
+        ],
+        "npc_events": [
+          "wpn_huge_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_huge",
+    "old": [
+      {
+        "effect": "shot_huge",
+        "path": "shot_huge/effects/shotSound",
+        "player_events": [
+          "wpn_huge_PC"
+        ],
+        "npc_events": [
+          "wpn_huge_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_huge",
+        "path": "shot_huge/effects/shotSound",
+        "player_events": [
+          "wpn_huge_PC"
+        ],
+        "npc_events": [
+          "wpn_huge_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_huge2",
+    "old": [
+      {
+        "effect": "shot_huge2",
+        "path": "shot_huge2/effects/shotSound",
+        "player_events": [
+          "wpn_huge_PC"
+        ],
+        "npc_events": [
+          "wpn_huge_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_huge2",
+        "path": "shot_huge2/effects/shotSound",
+        "player_events": [
+          "wpn_huge_PC"
+        ],
+        "npc_events": [
+          "wpn_huge_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_huge_mb",
+    "old": [
+      {
+        "effect": "shot_huge_mb",
+        "path": "shot_huge_mb/effects/shotSound",
+        "player_events": [
+          "wpn_huge_PC"
+        ],
+        "npc_events": [
+          "wpn_huge_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_huge_mb",
+        "path": "shot_huge_mb/effects/shotSound",
+        "player_events": [
+          "wpn_huge_PC"
+        ],
+        "npc_events": [
+          "wpn_huge_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_large",
+    "old": [
+      {
+        "effect": "shot_large",
+        "path": "shot_large/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_large",
+        "path": "shot_large/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_large_mb",
+    "old": [
+      {
+        "effect": "shot_large_mb",
+        "path": "shot_large_mb/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_large_mb",
+        "path": "shot_large_mb/effects/shotSound",
+        "player_events": [
+          "wpn_large_PC"
+        ],
+        "npc_events": [
+          "wpn_large_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_largeext",
+    "old": [
+      {
+        "effect": "shot_largeext",
+        "path": "shot_largeext/effects/shotSound",
+        "player_events": [
+          "wpn_large_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_large_extra_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_largeext",
+        "path": "shot_largeext/effects/shotSound",
+        "player_events": [
+          "wpn_large_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_large_extra_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_largeext_mb",
+    "old": [
+      {
+        "effect": "shot_largeext_mb",
+        "path": "shot_largeext_mb/effects/shotSound",
+        "player_events": [
+          "wpn_large_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_large_extra_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_largeext_mb",
+        "path": "shot_largeext_mb/effects/shotSound",
+        "player_events": [
+          "wpn_large_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_large_extra_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_main",
+    "old": [
+      {
+        "effect": "shot_main",
+        "path": "shot_main/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_main",
+        "path": "shot_main/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_main_mb",
+    "old": [
+      {
+        "effect": "shot_main_mb",
+        "path": "shot_main_mb/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_main_mb",
+        "path": "shot_main_mb/effects/shotSound",
+        "player_events": [
+          "wpn_main_PC"
+        ],
+        "npc_events": [
+          "wpn_main_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_mainext",
+    "old": [
+      {
+        "effect": "shot_mainext",
+        "path": "shot_mainext/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_mainext",
+        "path": "shot_mainext/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_mainext_mb",
+    "old": [
+      {
+        "effect": "shot_mainext_mb",
+        "path": "shot_mainext_mb/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_mainext_mb",
+        "path": "shot_mainext_mb/effects/shotSound",
+        "player_events": [
+          "wpn_main_extra_PC"
+        ],
+        "npc_events": [
+          "wpn_main_extra_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_medium",
+    "old": [
+      {
+        "effect": "shot_medium",
+        "path": "shot_medium/effects/shotSound",
+        "player_events": [
+          "wpn_meduim_PC"
+        ],
+        "npc_events": [
+          "wpn_meduim_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_medium",
+        "path": "shot_medium/effects/shotSound",
+        "player_events": [
+          "wpn_meduim_PC"
+        ],
+        "npc_events": [
+          "wpn_meduim_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_medium_mb",
+    "old": [
+      {
+        "effect": "shot_medium_mb",
+        "path": "shot_medium_mb/effects/shotSound",
+        "player_events": [
+          "wpn_meduim_PC"
+        ],
+        "npc_events": [
+          "wpn_meduim_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_medium_mb",
+        "path": "shot_medium_mb/effects/shotSound",
+        "player_events": [
+          "wpn_meduim_PC"
+        ],
+        "npc_events": [
+          "wpn_meduim_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_small",
+    "old": [
+      {
+        "effect": "shot_small",
+        "path": "shot_small/effects/shotSound",
+        "player_events": [
+          "wpn_small_PC"
+        ],
+        "npc_events": [
+          "wpn_small_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_small",
+        "path": "shot_small/effects/shotSound",
+        "player_events": [
+          "wpn_small_PC"
+        ],
+        "npc_events": [
+          "wpn_small_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_small_auto",
+    "old": [
+      {
+        "effect": "shot_small_auto",
+        "path": "shot_small_auto/effects/shotSound",
+        "player_events": [
+          "wpn_small_PC"
+        ],
+        "npc_events": [
+          "wpn_small_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_small_auto",
+        "path": "shot_small_auto/effects/shotSound",
+        "player_events": [
+          "wpn_small_PC"
+        ],
+        "npc_events": [
+          "wpn_small_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_small_auto_mb",
+    "old": [
+      {
+        "effect": "shot_small_auto_mb",
+        "path": "shot_small_auto_mb/effects/shotSound",
+        "player_events": [
+          "wpn_small_PC"
+        ],
+        "npc_events": [
+          "wpn_small_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_small_auto_mb",
+        "path": "shot_small_auto_mb/effects/shotSound",
+        "player_events": [
+          "wpn_small_PC"
+        ],
+        "npc_events": [
+          "wpn_small_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_small_mb",
+    "old": [
+      {
+        "effect": "shot_small_mb",
+        "path": "shot_small_mb/effects/shotSound",
+        "player_events": [
+          "wpn_small_PC"
+        ],
+        "npc_events": [
+          "wpn_small_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_small_mb",
+        "path": "shot_small_mb/effects/shotSound",
+        "player_events": [
+          "wpn_small_PC"
+        ],
+        "npc_events": [
+          "wpn_small_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_superhuge",
+    "old": [
+      {
+        "effect": "shot_superhuge",
+        "path": "shot_superhuge/effects/shotSound",
+        "player_events": [
+          "wpn_huge_PC"
+        ],
+        "npc_events": [
+          "wpn_huge_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_superhuge",
+        "path": "shot_superhuge/effects/shotSound",
+        "player_events": [
+          "wpn_huge_PC"
+        ],
+        "npc_events": [
+          "wpn_huge_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "effect": "shot_superhuge_mb",
+    "old": [
+      {
+        "effect": "shot_superhuge_mb",
+        "path": "shot_superhuge_mb/effects/shotSound",
+        "player_events": [
+          "wpn_huge_PC"
+        ],
+        "npc_events": [
+          "wpn_huge_NPC"
+        ]
+      }
+    ],
+    "current": [
+      {
+        "effect": "shot_superhuge_mb",
+        "path": "shot_superhuge_mb/effects/shotSound",
+        "player_events": [
+          "wpn_huge_PC"
+        ],
+        "npc_events": [
+          "wpn_huge_NPC"
+        ]
+      }
+    ]
+  }
+]

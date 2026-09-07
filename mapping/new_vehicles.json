@@ -1,0 +1,4076 @@
+[
+  {
+    "id": "china/Ch45_WZ_114_CFE_D",
+    "nation": "china",
+    "name": "Ch45_WZ_114_CFE_D",
+    "source": "scripts/item_defs/vehicles/china/Ch45_WZ_114_CFE_D.xml",
+    "shot_sound_tokens": [
+      "shot_largeext_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_Ch45_WZ_114_CFE_D/guns/_130mm_59_130M_CFE_D/effects",
+        "value": "shot_largeext_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch45_WZ_114_CFE_D",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch47_BZ_176_CFE_B",
+    "nation": "china",
+    "name": "Ch47_BZ_176_CFE_B",
+    "source": "scripts/item_defs/vehicles/china/Ch47_BZ_176_CFE_B.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch47_BZ_176_CFE_B",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch48_BZ_75_CFE_F",
+    "nation": "china",
+    "name": "Ch48_BZ_75_CFE_F",
+    "source": "scripts/item_defs/vehicles/china/Ch48_BZ_75_CFE_F.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch48_BZ_75_CFE_F",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch61_DZT_159_CFE_A",
+    "nation": "china",
+    "name": "Ch61_DZT_159_CFE_A",
+    "source": "scripts/item_defs/vehicles/china/Ch61_DZT_159_CFE_A.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch61_DZT_159_CFE_A",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch63_Yong_Bing",
+    "nation": "china",
+    "name": "Ch63_Yong_Bing",
+    "source": "scripts/item_defs/vehicles/china/Ch63_Yong_Bing.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch63_Yong_Bing",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch63_Yong_Bing_siege_mode",
+    "nation": "china",
+    "name": "Ch63_Yong_Bing_siege_mode",
+    "source": "scripts/item_defs/vehicles/china/Ch63_Yong_Bing_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch63_Yong_Bing",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch66_121_2_Ziqiang",
+    "nation": "china",
+    "name": "Ch66_121_2_Ziqiang",
+    "source": "scripts/item_defs/vehicles/china/Ch66_121_2_Ziqiang.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch66_121_2_Ziqiang",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch67_BZ_79",
+    "nation": "china",
+    "name": "Ch67_BZ_79",
+    "source": "scripts/item_defs/vehicles/china/Ch67_BZ_79.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch67_BZ_79",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch68_PGZ_70",
+    "nation": "china",
+    "name": "Ch68_PGZ_70",
+    "source": "scripts/item_defs/vehicles/china/Ch68_PGZ_70.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch68_PGZ_70",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch70_PTZ_78",
+    "nation": "china",
+    "name": "Ch70_PTZ_78",
+    "source": "scripts/item_defs/vehicles/china/Ch70_PTZ_78.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_1_Ch70_PTZ_78",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch71_WZ_219",
+    "nation": "china",
+    "name": "Ch71_WZ_219",
+    "source": "scripts/item_defs/vehicles/china/Ch71_WZ_219.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch71_WZ_219",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch72_Yongshi",
+    "nation": "china",
+    "name": "Ch72_Yongshi",
+    "source": "scripts/item_defs/vehicles/china/Ch72_Yongshi.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch72_Yongshi",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china/Ch74_Waffentrager_15",
+    "nation": "china",
+    "name": "Ch74_Waffentrager_15",
+    "source": "scripts/item_defs/vehicles/china/Ch74_Waffentrager_15.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Ch74_Waffentrager_15",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "common/forbidden_vehicles_to_battle_config",
+    "nation": "common",
+    "name": "forbidden_vehicles_to_battle_config",
+    "source": "scripts/item_defs/vehicles/common/forbidden_vehicles_to_battle_config.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": []
+  },
+  {
+    "id": "common/vehicle_mechanics",
+    "nation": "common",
+    "name": "vehicle_mechanics",
+    "source": "scripts/item_defs/vehicles/common/vehicle_mechanics.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": []
+  },
+  {
+    "id": "czech/Cz21_Vz_60S_Dravec",
+    "nation": "czech",
+    "name": "Cz21_Vz_60S_Dravec",
+    "source": "scripts/item_defs/vehicles/czech/Cz21_Vz_60S_Dravec.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Cz21_Vz_60S_Dravec",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "czech/Cz22_Skoda_T_15A",
+    "nation": "czech",
+    "name": "Cz22_Skoda_T_15A",
+    "source": "scripts/item_defs/vehicles/czech/Cz22_Skoda_T_15A.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Cz22_Skoda_T_15A",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "czech/Cz36_Jezevec",
+    "nation": "czech",
+    "name": "Cz36_Jezevec",
+    "source": "scripts/item_defs/vehicles/czech/Cz36_Jezevec.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Cz36_Jezevec",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "czech/Cz43_Ogar",
+    "nation": "czech",
+    "name": "Cz43_Ogar",
+    "source": "scripts/item_defs/vehicles/czech/Cz43_Ogar.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Cz43_Ogar",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "czech/Cz43_Ogar_siege_mode",
+    "nation": "czech",
+    "name": "Cz43_Ogar_siege_mode",
+    "source": "scripts/item_defs/vehicles/czech/Cz43_Ogar_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Cz43_Ogar",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "czech/Cz46_Vz_63P",
+    "nation": "czech",
+    "name": "Cz46_Vz_63P",
+    "source": "scripts/item_defs/vehicles/czech/Cz46_Vz_63P.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Cz46_Vz_63P",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F134_Lorraine_120_Alby",
+    "nation": "france",
+    "name": "F134_Lorraine_120_Alby",
+    "source": "scripts/item_defs/vehicles/france/F134_Lorraine_120_Alby.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F134_Lorraine_120_Alby",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F135_AS_XX_40_t",
+    "nation": "france",
+    "name": "F135_AS_XX_40_t",
+    "source": "scripts/item_defs/vehicles/france/F135_AS_XX_40_t.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F135_AS_XX_40_t",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "effects/destruction/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_fuel_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_fuel_NPC"
+        ]
+      },
+      {
+        "path": "effects/flaming/variant1/effects/sound",
+        "wwsoundPC": [
+          "flaming_engine_medium_pc"
+        ],
+        "wwsoundNPC": [
+          "flaming_engine_medium_npc"
+        ]
+      },
+      {
+        "path": "effects/flaming/variant2/effects/sound",
+        "wwsoundPC": [
+          "flaming_engine_large_pc"
+        ],
+        "wwsoundNPC": [
+          "flaming_engine_large_npc"
+        ]
+      },
+      {
+        "path": "effects/ammoBayExplosion/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_ammo_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_ammo_NPC"
+        ]
+      },
+      {
+        "path": "effects/instantExplosion/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_ammo_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_ammo_NPC"
+        ]
+      },
+      {
+        "path": "effects/ammoBayBurnOff/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_burnup_ammo_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_burnup_ammo_NPC"
+        ]
+      },
+      {
+        "path": "effects/fuelExplosion/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_fuel_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_fuel_NPC"
+        ]
+      },
+      {
+        "path": "effects/crewDeath/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/rammingDestruction/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_ram_death_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_ram_death_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle1/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_ammo_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_ammo_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle2/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_ammo_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_ammo_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle3/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_ammo_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_ammo_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle4/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_ammo_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_ammo_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F136_AMX_67_Imbattable",
+    "nation": "france",
+    "name": "F136_AMX_67_Imbattable",
+    "source": "scripts/item_defs/vehicles/france/F136_AMX_67_Imbattable.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F136_AMX_67_Imbattable",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F137_LEOX",
+    "nation": "france",
+    "name": "F137_LEOX",
+    "source": "scripts/item_defs/vehicles/france/F137_LEOX.xml",
+    "shot_sound_tokens": [
+      "shot_large"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_F137_LEOX/guns/_105_mm_gun_CN_105_F1_L56/effects",
+        "value": "shot_large"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F137_LEOX",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F138_Renault_R35_FCM_36",
+    "nation": "france",
+    "name": "F138_Renault_R35_FCM_36",
+    "source": "scripts/item_defs/vehicles/france/F138_Renault_R35_FCM_36.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F138_Renault_R35_FCM_36",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F139_Terrifiant",
+    "nation": "france",
+    "name": "F139_Terrifiant",
+    "source": "scripts/item_defs/vehicles/france/F139_Terrifiant.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F139_Terrifiant",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F140_Fantome",
+    "nation": "france",
+    "name": "F140_Fantome",
+    "source": "scripts/item_defs/vehicles/france/F140_Fantome.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F140_Fantome",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/upStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/upStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/upStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/upStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/downStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/downStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/downStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/downStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_stop_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F140_Fantome_siege_mode",
+    "nation": "france",
+    "name": "F140_Fantome_siege_mode",
+    "source": "scripts/item_defs/vehicles/france/F140_Fantome_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F140_Fantome",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/upStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/upStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/upStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/upStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/downStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/downStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/downStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_F140_Fantome/hullAiming/audio/sounds/downStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_stop_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F141_Durendal",
+    "nation": "france",
+    "name": "F141_Durendal",
+    "source": "scripts/item_defs/vehicles/france/F141_Durendal.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F141_Durendal",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F142_M47_Chevalier",
+    "nation": "france",
+    "name": "F142_M47_Chevalier",
+    "source": "scripts/item_defs/vehicles/france/F142_M47_Chevalier.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F142_M47_Chevalier",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F143_Fauteur",
+    "nation": "france",
+    "name": "F143_Fauteur",
+    "source": "scripts/item_defs/vehicles/france/F143_Fauteur.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F143_Fauteur",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "france/F147_AMX29_Belier",
+    "nation": "france",
+    "name": "F147_AMX29_Belier",
+    "source": "scripts/item_defs/vehicles/france/F147_AMX29_Belier.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_F147_AMX29_Belier",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G175_Rheinmetall_Begleitwagen",
+    "nation": "germany",
+    "name": "G175_Rheinmetall_Begleitwagen",
+    "source": "scripts/item_defs/vehicles/germany/G175_Rheinmetall_Begleitwagen.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G175_Rheinmetall_Begleitwagen",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G183_Fossa_VM_68",
+    "nation": "germany",
+    "name": "G183_Fossa_VM_68",
+    "source": "scripts/item_defs/vehicles/germany/G183_Fossa_VM_68.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G183_Fossa_VM_68",
+        "wwsoundPC": [
+          "wheels_suspension_pc"
+        ],
+        "wwsoundNPC": [
+          "wheels_suspension_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G183_Radkampfwagen",
+    "nation": "germany",
+    "name": "G183_Radkampfwagen",
+    "source": "scripts/item_defs/vehicles/germany/G183_Radkampfwagen.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G183_Radkampfwagen",
+        "wwsoundPC": [
+          "wheels_suspension_pc"
+        ],
+        "wwsoundNPC": [
+          "wheels_suspension_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G185_Leopard_120_Verbessert",
+    "nation": "germany",
+    "name": "G185_Leopard_120_Verbessert",
+    "source": "scripts/item_defs/vehicles/germany/G185_Leopard_120_Verbessert.xml",
+    "shot_sound_tokens": [
+      "shot_large"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_G185_Leopard_120_Verbessert/guns/_120mm_Rheinmetall_L_44/effects",
+        "value": "shot_large"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G185_Leopard_120_Verbessert",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G187_Taschenratte",
+    "nation": "germany",
+    "name": "G187_Taschenratte",
+    "source": "scripts/item_defs/vehicles/germany/G187_Taschenratte.xml",
+    "shot_sound_tokens": [
+      "shot_largeext"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_G187_Taschenratte/guns/_132mm_Kw_K_L_66/effects",
+        "value": "shot_largeext"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G187_Taschenratte",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G188_LeKpz_Borkenkafer",
+    "nation": "germany",
+    "name": "G188_LeKpz_Borkenkafer",
+    "source": "scripts/item_defs/vehicles/germany/G188_LeKpz_Borkenkafer.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G188_LeKpz_Borkenkafer",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G189_Hirschkafer",
+    "nation": "germany",
+    "name": "G189_Hirschkafer",
+    "source": "scripts/item_defs/vehicles/germany/G189_Hirschkafer.xml",
+    "shot_sound_tokens": [
+      "shot_large_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_G189_Hirschkafer/guns/_120mm_Rheinmetall_Geweih/effects",
+        "value": "shot_large_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G189_Hirschkafer",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G191_StuG_IIIF_CFE_A",
+    "nation": "germany",
+    "name": "G191_StuG_IIIF_CFE_A",
+    "source": "scripts/item_defs/vehicles/germany/G191_StuG_IIIF_CFE_A.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G191_StuG_IIIF_CFE_A",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "effects/destruction/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/flaming/variant1/effects/sound",
+        "wwsoundPC": [
+          "flaming_engine_medium_pc"
+        ],
+        "wwsoundNPC": [
+          "flaming_engine_medium_npc"
+        ]
+      },
+      {
+        "path": "effects/flaming/variant2/effects/sound",
+        "wwsoundPC": [
+          "flaming_engine_medium_pc"
+        ],
+        "wwsoundNPC": [
+          "flaming_engine_medium_npc"
+        ]
+      },
+      {
+        "path": "effects/ammoBayExplosion/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/instantExplosion/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/ammoBayBurnOff/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/fuelExplosion/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/crewDeath/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_m_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_m_NPC"
+        ]
+      },
+      {
+        "path": "effects/rammingDestruction/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle1/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle2/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle3/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle4/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G193_Pz_Kpfw_55",
+    "nation": "germany",
+    "name": "G193_Pz_Kpfw_55",
+    "source": "scripts/item_defs/vehicles/germany/G193_Pz_Kpfw_55.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G193_Pz_Kpfw_55",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_G193_Pz_Kpfw_55_2",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G193_Pz_Kpfw_55_siege_mode",
+    "nation": "germany",
+    "name": "G193_Pz_Kpfw_55_siege_mode",
+    "source": "scripts/item_defs/vehicles/germany/G193_Pz_Kpfw_55_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G193_Pz_Kpfw_55",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_G193_Pz_Kpfw_55_2",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G195_HWK_40",
+    "nation": "germany",
+    "name": "G195_HWK_40",
+    "source": "scripts/item_defs/vehicles/germany/G195_HWK_40.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G195_HWK_40",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G195_HWK_40_siege_mode",
+    "nation": "germany",
+    "name": "G195_HWK_40_siege_mode",
+    "source": "scripts/item_defs/vehicles/germany/G195_HWK_40_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G195_HWK_40",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G196_Versuchspanzer_57",
+    "nation": "germany",
+    "name": "G196_Versuchspanzer_57",
+    "source": "scripts/item_defs/vehicles/germany/G196_Versuchspanzer_57.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G196_Versuchspanzer_57",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_G196_Versuchspanzer_57_2",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G196_Versuchspanzer_57_siege_mode",
+    "nation": "germany",
+    "name": "G196_Versuchspanzer_57_siege_mode",
+    "source": "scripts/item_defs/vehicles/germany/G196_Versuchspanzer_57_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G196_Versuchspanzer_57",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_G196_Versuchspanzer_57_2",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G197_Pz_Kpfw_Neu",
+    "nation": "germany",
+    "name": "G197_Pz_Kpfw_Neu",
+    "source": "scripts/item_defs/vehicles/germany/G197_Pz_Kpfw_Neu.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G197_Pz_Kpfw_Neu",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G197_Pz_Kpfw_Neu_siege_mode",
+    "nation": "germany",
+    "name": "G197_Pz_Kpfw_Neu_siege_mode",
+    "source": "scripts/item_defs/vehicles/germany/G197_Pz_Kpfw_Neu_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G197_Pz_Kpfw_Neu",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G198_Kampfpanzer_67",
+    "nation": "germany",
+    "name": "G198_Kampfpanzer_67",
+    "source": "scripts/item_defs/vehicles/germany/G198_Kampfpanzer_67.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G198_Kampfpanzer_67",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G198_Kampfpanzer_67_siege_mode",
+    "nation": "germany",
+    "name": "G198_Kampfpanzer_67_siege_mode",
+    "source": "scripts/item_defs/vehicles/germany/G198_Kampfpanzer_67_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G198_Kampfpanzer_67",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G200_Chi_Go",
+    "nation": "germany",
+    "name": "G200_Chi_Go",
+    "source": "scripts/item_defs/vehicles/germany/G200_Chi_Go.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G200_Chi_Go",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G204_PzVI_Tiger_P_CFE_A",
+    "nation": "germany",
+    "name": "G204_PzVI_Tiger_P_CFE_A",
+    "source": "scripts/item_defs/vehicles/germany/G204_PzVI_Tiger_P_CFE_A.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G204_PzVI_Tiger_P_CFE_A",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G25_PzII_Luchs_SHXXI_L",
+    "nation": "germany",
+    "name": "G25_PzII_Luchs_SHXXI_L",
+    "source": "scripts/item_defs/vehicles/germany/G25_PzII_Luchs_SHXXI_L.xml",
+    "shot_sound_tokens": [
+      "shot_large_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_G25_PzII_Luchs_SHXXI_L/guns/_105mm_StuH42_L28Pz_SH_bot/effects",
+        "value": "shot_large_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G25_PzII_Luchs_SHXXI_L",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G56_E-100_7x7",
+    "nation": "germany",
+    "name": "G56_E-100_7x7",
+    "source": "scripts/item_defs/vehicles/germany/G56_E-100_7x7.xml",
+    "shot_sound_tokens": [
+      "shot_largeext"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_2_G56_E-100_7x7/guns/_128mm_Kw_K_44_L_55_Ausf_E_7x7/effects",
+        "value": "shot_largeext"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G56_E-100_7x7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G72_JagdPz_E100_7x7",
+    "nation": "germany",
+    "name": "G72_JagdPz_E100_7x7",
+    "source": "scripts/item_defs/vehicles/germany/G72_JagdPz_E100_7x7.xml",
+    "shot_sound_tokens": [
+      "shot_superhuge"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_G72_JagdPz_E100_7x7/guns/_170mm_PaK_K72_7x7/effects",
+        "value": "shot_superhuge"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G72_JagdPz_E100_7x7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "germany/G98_Waffentrager_E100_CFE_T",
+    "nation": "germany",
+    "name": "G98_Waffentrager_E100_CFE_T",
+    "source": "scripts/item_defs/vehicles/germany/G98_Waffentrager_E100_CFE_T.xml",
+    "shot_sound_tokens": [
+      "shot_huge"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_G98_Waffentrager_E100_CFE_T/guns/_150mm_Pak_L_38_CFE_T/effects",
+        "value": "shot_huge"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_G98_Waffentrager_E100_CFE_T",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "italy/It37_Serpente",
+    "nation": "italy",
+    "name": "It37_Serpente",
+    "source": "scripts/item_defs/vehicles/italy/It37_Serpente.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_It37_Serpente",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "italy/It37_Serpente_siege_mode",
+    "nation": "italy",
+    "name": "It37_Serpente_siege_mode",
+    "source": "scripts/item_defs/vehicles/italy/It37_Serpente_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_It37_Serpente",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "italy/It38_Donnola",
+    "nation": "italy",
+    "name": "It38_Donnola",
+    "source": "scripts/item_defs/vehicles/italy/It38_Donnola.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_It38_Donnola",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "italy/It39_Coccodrillo",
+    "nation": "italy",
+    "name": "It39_Coccodrillo",
+    "source": "scripts/item_defs/vehicles/italy/It39_Coccodrillo.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_It39_Coccodrillo",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "italy/It40_Predatore",
+    "nation": "italy",
+    "name": "It40_Predatore",
+    "source": "scripts/item_defs/vehicles/italy/It40_Predatore.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_It40_Predatore",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "italy/It41_Cerbero",
+    "nation": "italy",
+    "name": "It41_Cerbero",
+    "source": "scripts/item_defs/vehicles/italy/It41_Cerbero.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_It41_Cerbero",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "italy/It43_CAV_mod_71",
+    "nation": "italy",
+    "name": "It43_CAV_mod_71",
+    "source": "scripts/item_defs/vehicles/italy/It43_CAV_mod_71.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_It43_CAV_mod_71",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "japan/J35_Ho_Ri_3_7x7",
+    "nation": "japan",
+    "name": "J35_Ho_Ri_3_7x7",
+    "source": "scripts/item_defs/vehicles/japan/J35_Ho_Ri_3_7x7.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_J35_Ho_Ri_3_7x7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "japan/J42_Chi_Se_CFE_A",
+    "nation": "japan",
+    "name": "J42_Chi_Se_CFE_A",
+    "source": "scripts/item_defs/vehicles/japan/J42_Chi_Se_CFE_A.xml",
+    "shot_sound_tokens": [
+      "shot_large"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_J42_Chi_Se_CFE_A/guns/_105mm_Type_5_Se/effects",
+        "value": "shot_large"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_J42_Chi_Se_CFE_A",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "japan/J48_Saryuda",
+    "nation": "japan",
+    "name": "J48_Saryuda",
+    "source": "scripts/item_defs/vehicles/japan/J48_Saryuda.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_J48_Saryuda",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "japan/J48_Saryuda_siege_mode",
+    "nation": "japan",
+    "name": "J48_Saryuda_siege_mode",
+    "source": "scripts/item_defs/vehicles/japan/J48_Saryuda_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_J48_Saryuda",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "japan/J49_Kame",
+    "nation": "japan",
+    "name": "J49_Kame",
+    "source": "scripts/item_defs/vehicles/japan/J49_Kame.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_J49_Kame",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "japan/J51_Ashigaru",
+    "nation": "japan",
+    "name": "J51_Ashigaru",
+    "source": "scripts/item_defs/vehicles/japan/J51_Ashigaru.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_J51_Ashigaru",
+        "wwsoundPC": [
+          "wheels_suspension_pc"
+        ],
+        "wwsoundNPC": [
+          "wheels_suspension_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "japan/J52_STK_2",
+    "nation": "japan",
+    "name": "J52_STK_2",
+    "source": "scripts/item_defs/vehicles/japan/J52_STK_2.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_J52_STK_2",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/upStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/upStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/upStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/upStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/downStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/downStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/downStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/downStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_stop_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "japan/J52_STK_2_siege_mode",
+    "nation": "japan",
+    "name": "J52_STK_2_siege_mode",
+    "source": "scripts/item_defs/vehicles/japan/J52_STK_2_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_J52_STK_2",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/upStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/upStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/upStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/upStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/downStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/downStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/downStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_J52_STK_2/hullAiming/audio/sounds/downStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_stop_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "japan/J53_Ho_Ri_Shugo",
+    "nation": "japan",
+    "name": "J53_Ho_Ri_Shugo",
+    "source": "scripts/item_defs/vehicles/japan/J53_Ho_Ri_Shugo.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_J53_Ho_Ri_Shugo",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "poland/Pl15_60TP_Lewandowskiego_CFE_A",
+    "nation": "poland",
+    "name": "Pl15_60TP_Lewandowskiego_CFE_A",
+    "source": "scripts/item_defs/vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A.xml",
+    "shot_sound_tokens": [
+      "shot_huge_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_Pl15_60TP_Lewandowskiego_CFE_A/guns/_152mm_J_2_CFE_A/effects",
+        "value": "shot_huge_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Pl15_60TP_Lewandowskiego_CFE_A",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "poland/Pl36_Wz_64GC_Bzyg",
+    "nation": "poland",
+    "name": "Pl36_Wz_64GC_Bzyg",
+    "source": "scripts/item_defs/vehicles/poland/Pl36_Wz_64GC_Bzyg.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Pl36_Wz_64GC_Bzyg",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "poland/Pl37_CS_67_Szakal",
+    "nation": "poland",
+    "name": "Pl37_CS_67_Szakal",
+    "source": "scripts/item_defs/vehicles/poland/Pl37_CS_67_Szakal.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Pl37_CS_67_Szakal",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "poland/Pl38_63TP_Rycerski",
+    "nation": "poland",
+    "name": "Pl38_63TP_Rycerski",
+    "source": "scripts/item_defs/vehicles/poland/Pl38_63TP_Rycerski.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Pl38_63TP_Rycerski",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "poland/Pl39_Husarz",
+    "nation": "poland",
+    "name": "Pl39_Husarz",
+    "source": "scripts/item_defs/vehicles/poland/Pl39_Husarz.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Pl39_Husarz",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "poland/Pl40_Krazownik",
+    "nation": "poland",
+    "name": "Pl40_Krazownik",
+    "source": "scripts/item_defs/vehicles/poland/Pl40_Krazownik.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Pl40_Krazownik",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "poland/Pl44_Kolczatka",
+    "nation": "poland",
+    "name": "Pl44_Kolczatka",
+    "source": "scripts/item_defs/vehicles/poland/Pl44_Kolczatka.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_Pl44_Kolczatka",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sweden/S35_Stridsyxa",
+    "nation": "sweden",
+    "name": "S35_Stridsyxa",
+    "source": "scripts/item_defs/vehicles/sweden/S35_Stridsyxa.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_S35_Stridsyxa",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sweden/S36_Strv_107_12",
+    "nation": "sweden",
+    "name": "S36_Strv_107_12",
+    "source": "scripts/item_defs/vehicles/sweden/S36_Strv_107_12.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/upStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/upStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/upStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/upStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/downStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/downStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/downStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/downStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_stop_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sweden/S36_Strv_107_12_siege_mode",
+    "nation": "sweden",
+    "name": "S36_Strv_107_12_siege_mode",
+    "source": "scripts/item_defs/vehicles/sweden/S36_Strv_107_12_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/upStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/upStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/upStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/upStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/downStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/downStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/downStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S36_Strv_107_12/hullAiming/audio/sounds/downStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_stop_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sweden/S37_Ambassador",
+    "nation": "sweden",
+    "name": "S37_Ambassador",
+    "source": "scripts/item_defs/vehicles/sweden/S37_Ambassador.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_S37_Ambassador",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sweden/S39_Strv_m31",
+    "nation": "sweden",
+    "name": "S39_Strv_m31",
+    "source": "scripts/item_defs/vehicles/sweden/S39_Strv_m31.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_S39_Strv_m31",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sweden/S41_BV_111",
+    "nation": "sweden",
+    "name": "S41_BV_111",
+    "source": "scripts/item_defs/vehicles/sweden/S41_BV_111.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_S41_BV_111",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/upStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/upStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/upStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/upStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/downStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/downStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/downStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/downStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_stop_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sweden/S41_BV_111_siege_mode",
+    "nation": "sweden",
+    "name": "S41_BV_111_siege_mode",
+    "source": "scripts/item_defs/vehicles/sweden/S41_BV_111_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_S41_BV_111",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/upStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/upStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/upStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/upStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/downStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/downStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/downStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_S41_BV_111/hullAiming/audio/sounds/downStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_stop_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB109_GSOR_1008_CFE_J",
+    "nation": "uk",
+    "name": "GB109_GSOR_1008_CFE_J",
+    "source": "scripts/item_defs/vehicles/uk/GB109_GSOR_1008_CFE_J.xml",
+    "shot_sound_tokens": [
+      "shot_large"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_GB109_GSOR_1008_CFE_J/guns/_105mm_AT_Gun_L7A1_CFE_J/effects",
+        "value": "shot_large"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB109_GSOR_1008_CFE_J",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB120_Concept_No_5_7x7",
+    "nation": "uk",
+    "name": "GB120_Concept_No_5_7x7",
+    "source": "scripts/item_defs/vehicles/uk/GB120_Concept_No_5_7x7.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB120_Concept_No_5_7x7",
+        "wwsoundPC": [
+          "wheels_suspension_pc"
+        ],
+        "wwsoundNPC": [
+          "wheels_suspension_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB130_FV225_Collector",
+    "nation": "uk",
+    "name": "GB130_FV225_Collector",
+    "source": "scripts/item_defs/vehicles/uk/GB130_FV225_Collector.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB130_FV225_Collector",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB130_FV225_Collector_siege_mode",
+    "nation": "uk",
+    "name": "GB130_FV225_Collector_siege_mode",
+    "source": "scripts/item_defs/vehicles/uk/GB130_FV225_Collector_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB130_FV225_Collector",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB132_Taurus_CAT",
+    "nation": "uk",
+    "name": "GB132_Taurus_CAT",
+    "source": "scripts/item_defs/vehicles/uk/GB132_Taurus_CAT.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/upStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/upStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/upStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/upStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/downStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/downStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/downStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/downStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_stop_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB132_Taurus_CAT_siege_mode",
+    "nation": "uk",
+    "name": "GB132_Taurus_CAT_siege_mode",
+    "source": "scripts/item_defs/vehicles/uk/GB132_Taurus_CAT_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/upStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/upStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/upStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/upStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_up_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_up_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/downStart/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/downStart/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_start_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_start_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/downStop/underLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_small_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_small_angle_down_stop_NPC"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_GB132_Taurus_CAT/hullAiming/audio/sounds/downStop/overLimitSounds",
+        "wwsoundPC": [
+          "tangage_gidro_high_angle_down_stop_PC"
+        ],
+        "wwsoundNPC": [
+          "tangage_gidro_high_angle_down_stop_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB137_Cromwell_Applique",
+    "nation": "uk",
+    "name": "GB137_Cromwell_Applique",
+    "source": "scripts/item_defs/vehicles/uk/GB137_Cromwell_Applique.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB137_Cromwell_Applique",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB142_FV230_Canopener_CFE_G",
+    "nation": "uk",
+    "name": "GB142_FV230_Canopener_CFE_G",
+    "source": "scripts/item_defs/vehicles/uk/GB142_FV230_Canopener_CFE_G.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB142_FV230_Canopener_CFE_G",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB142_FV230_Canopener_CFE_G_siege_mode",
+    "nation": "uk",
+    "name": "GB142_FV230_Canopener_CFE_G_siege_mode",
+    "source": "scripts/item_defs/vehicles/uk/GB142_FV230_Canopener_CFE_G_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB142_FV230_Canopener_CFE_G",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB147_FV4025_Contriver",
+    "nation": "uk",
+    "name": "GB147_FV4025_Contriver",
+    "source": "scripts/item_defs/vehicles/uk/GB147_FV4025_Contriver.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB147_FV4025_Contriver",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB147_FV4025_Contriver_siege_mode",
+    "nation": "uk",
+    "name": "GB147_FV4025_Contriver_siege_mode",
+    "source": "scripts/item_defs/vehicles/uk/GB147_FV4025_Contriver_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB147_FV4025_Contriver",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB151_Headshaker",
+    "nation": "uk",
+    "name": "GB151_Headshaker",
+    "source": "scripts/item_defs/vehicles/uk/GB151_Headshaker.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB151_Headshaker",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB152_AT_FV230_Breaker",
+    "nation": "uk",
+    "name": "GB152_AT_FV230_Breaker",
+    "source": "scripts/item_defs/vehicles/uk/GB152_AT_FV230_Breaker.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB152_AT_FV230_Breaker",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB155_Pike",
+    "nation": "uk",
+    "name": "GB155_Pike",
+    "source": "scripts/item_defs/vehicles/uk/GB155_Pike.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB155_Pike",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB156_Black_Prince_II",
+    "nation": "uk",
+    "name": "GB156_Black_Prince_II",
+    "source": "scripts/item_defs/vehicles/uk/GB156_Black_Prince_II.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB156_Black_Prince_II",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB156_Black_Prince_II_siege_mode",
+    "nation": "uk",
+    "name": "GB156_Black_Prince_II_siege_mode",
+    "source": "scripts/item_defs/vehicles/uk/GB156_Black_Prince_II_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB156_Black_Prince_II",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB157_FV214t",
+    "nation": "uk",
+    "name": "GB157_FV214t",
+    "source": "scripts/item_defs/vehicles/uk/GB157_FV214t.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB157_FV214t",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB158_Executor",
+    "nation": "uk",
+    "name": "GB158_Executor",
+    "source": "scripts/item_defs/vehicles/uk/GB158_Executor.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB158_Executor",
+        "wwsoundPC": [
+          "wheels_suspension_pc"
+        ],
+        "wwsoundNPC": [
+          "wheels_suspension_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB86_Centurion_Action_X_CFE_A",
+    "nation": "uk",
+    "name": "GB86_Centurion_Action_X_CFE_A",
+    "source": "scripts/item_defs/vehicles/uk/GB86_Centurion_Action_X_CFE_A.xml",
+    "shot_sound_tokens": [
+      "shot_large"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_GB86_Centurion_Action_X_CFE_A/guns/_105mm_Gun_L7_HEAT_CFE_A/effects",
+        "value": "shot_large"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB86_Centurion_Action_X_CFE_A",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uk/GB91_Super_Conqueror_7x7",
+    "nation": "uk",
+    "name": "GB91_Super_Conqueror_7x7",
+    "source": "scripts/item_defs/vehicles/uk/GB91_Super_Conqueror_7x7.xml",
+    "shot_sound_tokens": [
+      "shot_large"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_GB91_Super_Conqueror_7x7/guns/_120mm_Gun_L1A1_7x7/effects",
+        "value": "shot_large"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_GB91_Super_Conqueror_7x7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A144_M_VI_Y_CFE_R",
+    "nation": "usa",
+    "name": "A144_M_VI_Y_CFE_R",
+    "source": "scripts/item_defs/vehicles/usa/A144_M_VI_Y_CFE_R.xml",
+    "shot_sound_tokens": [
+      "shot_large"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_A144_M_VI_Y_CFE_R/guns/_120mm_American_British_Gun_RC/effects",
+        "value": "shot_large"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A144_M_VI_Y_CFE_R",
+        "wwsoundPC": [
+          "trds_yoh_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_yoh_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A144_M_VI_Y_CFE_RC",
+    "nation": "usa",
+    "name": "A144_M_VI_Y_CFE_RC",
+    "source": "scripts/item_defs/vehicles/usa/A144_M_VI_Y_CFE_RC.xml",
+    "shot_sound_tokens": [
+      "shot_large"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_A144_M_VI_Y_CFE_RC/guns/_120mm_American_British_Gun_RC_C/effects",
+        "value": "shot_large"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A144_M_VI_Y_CFE_RC",
+        "wwsoundPC": [
+          "trds_yoh_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_yoh_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A168_XM_57_CFE_I",
+    "nation": "usa",
+    "name": "A168_XM_57_CFE_I",
+    "source": "scripts/item_defs/vehicles/usa/A168_XM_57_CFE_I.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A168_XM_57_CFE_I",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A170_M_VII_Y",
+    "nation": "usa",
+    "name": "A170_M_VII_Y",
+    "source": "scripts/item_defs/vehicles/usa/A170_M_VII_Y.xml",
+    "shot_sound_tokens": [
+      "shot_large"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_A170_M_VII_Y/guns/_120mm_T123E1/effects",
+        "value": "shot_large"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A170_M_VII_Y",
+        "wwsoundPC": [
+          "trds_yoh_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_yoh_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A175_LTC_II",
+    "nation": "usa",
+    "name": "A175_LTC_II",
+    "source": "scripts/item_defs/vehicles/usa/A175_LTC_II.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A175_LTC_II",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A178_SPHT",
+    "nation": "usa",
+    "name": "A178_SPHT",
+    "source": "scripts/item_defs/vehicles/usa/A178_SPHT.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A178_SPHT",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A179_Black_Rock",
+    "nation": "usa",
+    "name": "A179_Black_Rock",
+    "source": "scripts/item_defs/vehicles/usa/A179_Black_Rock.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A179_Black_Rock",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A182_T803",
+    "nation": "usa",
+    "name": "A182_T803",
+    "source": "scripts/item_defs/vehicles/usa/A182_T803.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A182_T803",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A183_XM69_Hacker",
+    "nation": "usa",
+    "name": "A183_XM69_Hacker",
+    "source": "scripts/item_defs/vehicles/usa/A183_XM69_Hacker.xml",
+    "shot_sound_tokens": [
+      "shot_large"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_A183_XM69_Hacker/guns/_110mm_EXP_S/effects",
+        "value": "shot_large"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A183_XM69_Hacker",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A186_XM94_Shadow",
+    "nation": "usa",
+    "name": "A186_XM94_Shadow",
+    "source": "scripts/item_defs/vehicles/usa/A186_XM94_Shadow.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A186_XM94_Shadow",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A187_Ares_75",
+    "nation": "usa",
+    "name": "A187_Ares_75",
+    "source": "scripts/item_defs/vehicles/usa/A187_Ares_75.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A187_Ares_75",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_A187_Ares_75_2",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A188_Ares_MTB",
+    "nation": "usa",
+    "name": "A188_Ares_MTB",
+    "source": "scripts/item_defs/vehicles/usa/A188_Ares_MTB.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A188_Ares_MTB",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A189_Ares_90",
+    "nation": "usa",
+    "name": "A189_Ares_90",
+    "source": "scripts/item_defs/vehicles/usa/A189_Ares_90.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A189_Ares_90",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A190_Ares_85",
+    "nation": "usa",
+    "name": "A190_Ares_85",
+    "source": "scripts/item_defs/vehicles/usa/A190_Ares_85.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A190_Ares_85",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "chassis/Chassis_A190_Ares_85_2",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A191_Ares_90_C",
+    "nation": "usa",
+    "name": "A191_Ares_90_C",
+    "source": "scripts/item_defs/vehicles/usa/A191_Ares_90_C.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A191_Ares_90_C",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A192_M4A4_Firefly_CFE_A",
+    "nation": "usa",
+    "name": "A192_M4A4_Firefly_CFE_A",
+    "source": "scripts/item_defs/vehicles/usa/A192_M4A4_Firefly_CFE_A.xml",
+    "shot_sound_tokens": [
+      "shot_medium_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_A192_M4A4_Firefly_CFE_A/guns/OQF_17pdr_Gun_Mk_VIIA/effects",
+        "value": "shot_medium_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A192_M4A4_Firefly_CFE_A",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      },
+      {
+        "path": "effects/destruction/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/flaming/variant1/effects/sound",
+        "wwsoundPC": [
+          "flaming_engine_medium_pc"
+        ],
+        "wwsoundNPC": [
+          "flaming_engine_medium_npc"
+        ]
+      },
+      {
+        "path": "effects/flaming/variant2/effects/sound",
+        "wwsoundPC": [
+          "flaming_engine_medium_pc"
+        ],
+        "wwsoundNPC": [
+          "flaming_engine_medium_npc"
+        ]
+      },
+      {
+        "path": "effects/ammoBayExplosion/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/instantExplosion/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/ammoBayBurnOff/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/fuelExplosion/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/crewDeath/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_m_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_m_NPC"
+        ]
+      },
+      {
+        "path": "effects/rammingDestruction/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle1/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle2/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle3/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      },
+      {
+        "path": "effects/explosionCandle4/variant1/effects/sound",
+        "wwsoundPC": [
+          "expl_crew_death_l_PC"
+        ],
+        "wwsoundNPC": [
+          "expl_crew_death_l_NPC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A194_AHT_7",
+    "nation": "usa",
+    "name": "A194_AHT_7",
+    "source": "scripts/item_defs/vehicles/usa/A194_AHT_7.xml",
+    "shot_sound_tokens": [
+      "shot_huge"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_A194_AHT_7/guns/_165_1mm_M135E1/effects",
+        "value": "shot_huge"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A194_AHT_7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A195_Gorilla",
+    "nation": "usa",
+    "name": "A195_Gorilla",
+    "source": "scripts/item_defs/vehicles/usa/A195_Gorilla.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A195_Gorilla",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A195_Gorilla_siege_mode",
+    "nation": "usa",
+    "name": "A195_Gorilla_siege_mode",
+    "source": "scripts/item_defs/vehicles/usa/A195_Gorilla_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A195_Gorilla",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A197_Jezevec",
+    "nation": "usa",
+    "name": "A197_Jezevec",
+    "source": "scripts/item_defs/vehicles/usa/A197_Jezevec.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A197_Jezevec",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A67_T57_58_7x7",
+    "nation": "usa",
+    "name": "A67_T57_58_7x7",
+    "source": "scripts/item_defs/vehicles/usa/A67_T57_58_7x7.xml",
+    "shot_sound_tokens": [
+      "shot_large_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_A67_T57_58_7x7/guns/_120mm_Gun_T179_7x7/effects",
+        "value": "shot_large_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A67_T57_58_7x7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usa/A85_T110E3_7x7",
+    "nation": "usa",
+    "name": "A85_T110E3_7x7",
+    "source": "scripts/item_defs/vehicles/usa/A85_T110E3_7x7.xml",
+    "shot_sound_tokens": [
+      "shot_huge_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_A85_T110E3_7x7/guns/_155mm_AT_Gun_T7E3_7x7/effects",
+        "value": "shot_huge_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_A85_T110E3_7x7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_chf_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R144_K_91_7x7",
+    "nation": "ussr",
+    "name": "R144_K_91_7x7",
+    "source": "scripts/item_defs/vehicles/ussr/R144_K_91_7x7.xml",
+    "shot_sound_tokens": [
+      "shot_mainext_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_R144_K_91_7x7/guns/_100mm_D_46T_7x7/effects",
+        "value": "shot_mainext_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R144_K_91_7x7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R145_Object_705_A_7x7",
+    "nation": "ussr",
+    "name": "R145_Object_705_A_7x7",
+    "source": "scripts/item_defs/vehicles/ussr/R145_Object_705_A_7x7.xml",
+    "shot_sound_tokens": [
+      "shot_huge_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_R145_Object_705_A_7x7/guns/_152mm_M_51_7x7/effects",
+        "value": "shot_huge_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R145_Object_705_A_7x7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R148_Object_430_U_7x7",
+    "nation": "ussr",
+    "name": "R148_Object_430_U_7x7",
+    "source": "scripts/item_defs/vehicles/ussr/R148_Object_430_U_7x7.xml",
+    "shot_sound_tokens": [
+      "shot_large_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_R148_Object_430_U_7x7/guns/_122mm_M62_T2U_7x7/effects",
+        "value": "shot_large_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R148_Object_430_U_7x7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R172_Object_752_CFE_T",
+    "nation": "ussr",
+    "name": "R172_Object_752_CFE_T",
+    "source": "scripts/item_defs/vehicles/ussr/R172_Object_752_CFE_T.xml",
+    "shot_sound_tokens": [
+      "shot_large_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_R172_Object_752_CFE_T/guns/_122mm_M62_CFE_T/effects",
+        "value": "shot_large_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R172_Object_752_CFE_T",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R218_T_115",
+    "nation": "ussr",
+    "name": "R218_T_115",
+    "source": "scripts/item_defs/vehicles/ussr/R218_T_115.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R218_T_115",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R228_KR_1",
+    "nation": "ussr",
+    "name": "R228_KR_1",
+    "source": "scripts/item_defs/vehicles/ussr/R228_KR_1.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R228_KR_1",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      },
+      {
+        "path": "effects/rammingCollisionHeavy/variant1/effects/collisionSound",
+        "wwsoundPC": [
+          "abl_improv_ram"
+        ],
+        "wwsoundNPC": [
+          "phys_coll_heavy_npc, phys_friction_after_coll_npc"
+        ]
+      },
+      {
+        "path": "effects/rammingCollisionLight/variant1/effects/collisionSound",
+        "wwsoundPC": [
+          "collision_tank_pc"
+        ],
+        "wwsoundNPC": [
+          "phys_coll_light_npc, phys_friction_after_coll_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R230_Object_432U",
+    "nation": "ussr",
+    "name": "R230_Object_432U",
+    "source": "scripts/item_defs/vehicles/ussr/R230_Object_432U.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R230_Object_432U",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R231_Buryan",
+    "nation": "ussr",
+    "name": "R231_Buryan",
+    "source": "scripts/item_defs/vehicles/ussr/R231_Buryan.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R231_Buryan",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R233_NK_1",
+    "nation": "ussr",
+    "name": "R233_NK_1",
+    "source": "scripts/item_defs/vehicles/ussr/R233_NK_1.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_1_R233_NK_1",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R234_T_13",
+    "nation": "ussr",
+    "name": "R234_T_13",
+    "source": "scripts/item_defs/vehicles/ussr/R234_T_13.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R234_T_13",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R235_KB_52",
+    "nation": "ussr",
+    "name": "R235_KB_52",
+    "source": "scripts/item_defs/vehicles/ussr/R235_KB_52.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R235_KB_52",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R236_Object_265_II",
+    "nation": "ussr",
+    "name": "R236_Object_265_II",
+    "source": "scripts/item_defs/vehicles/ussr/R236_Object_265_II.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R236_Object_265_II",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R236_Object_265_II_siege_mode",
+    "nation": "ussr",
+    "name": "R236_Object_265_II_siege_mode",
+    "source": "scripts/item_defs/vehicles/ussr/R236_Object_265_II_siege_mode.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R236_Object_265_II",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R239_Object_Veles",
+    "nation": "ussr",
+    "name": "R239_Object_Veles",
+    "source": "scripts/item_defs/vehicles/ussr/R239_Object_Veles.xml",
+    "shot_sound_tokens": [],
+    "gun_shot_sounds": [],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R239_Object_Veles",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R45_IS-7_7x7",
+    "nation": "ussr",
+    "name": "R45_IS-7_7x7",
+    "source": "scripts/item_defs/vehicles/ussr/R45_IS-7_7x7.xml",
+    "shot_sound_tokens": [
+      "shot_largeext_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_R45_IS-7_7x7/guns/_130mm_S_70_7x7/effects",
+        "value": "shot_largeext_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R45_IS-7_7x7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ussr/R97_Object_140_7x7",
+    "nation": "ussr",
+    "name": "R97_Object_140_7x7",
+    "source": "scripts/item_defs/vehicles/ussr/R97_Object_140_7x7.xml",
+    "shot_sound_tokens": [
+      "shot_mainext_mb"
+    ],
+    "gun_shot_sounds": [
+      {
+        "path": "turrets0/Turret_1_R97_Object_140_7x7/guns/_100mm_U_8TS_140_7x7/effects",
+        "value": "shot_mainext_mb"
+      }
+    ],
+    "vehicle_sounds": [
+      {
+        "path": "chassis/Chassis_R97_Object_140_7x7",
+        "wwsoundPC": [
+          "treads_type_pc"
+        ],
+        "wwsoundNPC": [
+          "trds_med_npc"
+        ]
+      }
+    ]
+  }
+]

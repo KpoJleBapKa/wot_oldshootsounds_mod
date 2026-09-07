@@ -1,0 +1,146 @@
+[
+  {
+    "event_id": 3810854594,
+    "event_name": "wpn_automatic_NPC",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 3393838454,
+    "event_name": "wpn_automatic_PC",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 2900886352,
+    "event_name": "wpn_huge_NPC",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 3714550572,
+    "event_name": "wpn_huge_PC",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 2900886352,
+    "event_name": "wpn_huge_npc",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 3714550572,
+    "event_name": "wpn_huge_pc",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 838979778,
+    "event_name": "wpn_large_NPC",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 1201679222,
+    "event_name": "wpn_large_PC",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 2136050303,
+    "event_name": "wpn_large_dual_NPC",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 3122534293,
+    "event_name": "wpn_large_dual_PC",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 147748593,
+    "event_name": "wpn_large_extra_NPC",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 2709031111,
+    "event_name": "wpn_large_extra_PC",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 4253673230,
+    "event_name": "wpn_main_NPC",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 2976121522,
+    "event_name": "wpn_main_PC",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 1628371059,
+    "event_name": "wpn_main_dual_NPC",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 1437900953,
+    "event_name": "wpn_main_dual_PC",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 3181429045,
+    "event_name": "wpn_main_extra_NPC",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 337105211,
+    "event_name": "wpn_main_extra_PC",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 2122367750,
+    "event_name": "wpn_main_extra_dual_NPC",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 3429444522,
+    "event_name": "wpn_main_extra_dual_PC",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 2544375808,
+    "event_name": "wpn_meduim_NPC",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 3197430972,
+    "event_name": "wpn_meduim_PC",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 3271552702,
+    "event_name": "wpn_small_NPC",
+    "purpose": "other tank gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  },
+  {
+    "event_id": 1913943554,
+    "event_name": "wpn_small_PC",
+    "purpose": "player gunshot",
+    "source": "CURRENT_WOT_ROOT/res/packages/scripts.pkg!/scripts/item_defs/vehicles/common/gun_effects.xml"
+  }
+]
