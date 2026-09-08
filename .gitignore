@@ -3,3 +3,10 @@ CURRENT_WOT_ROOT
 OLD_WOT_ROOT
 work/
 inventory/
+reference/9.13-Wot-gun-sounds-for-wot/
+reference/wot-src-eu/
+reference/WotSourceExtractor/
+tools/vendor/BWXML/
+tools/vendor/wwiser-utils/
+tools/vendor/wwiser/
+tools/__pycache__/
