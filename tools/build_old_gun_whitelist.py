@@ -37,6 +37,25 @@ def effect_events(calibers):
     return result
 
 
+def current_event_map(calibers):
+    result = {}
+    for category in calibers:
+        if not category["old"] or not category["current"]:
+            continue
+        old_record = category["old"][0]
+        current_record = category["current"][0]
+        if not old_record["player_events"] or not old_record["npc_events"] or not current_record["player_events"] or not current_record["npc_events"]:
+            continue
+        target = ("oldshoot_" + old_record["player_events"][0].lower(), "oldshoot_" + old_record["npc_events"][0].lower())
+        for event in current_record["player_events"] + current_record["npc_events"]:
+            key = event.lower()
+            previous = result.get(key)
+            if previous is not None and previous != target:
+                raise RuntimeError("Conflicting current event mapping: {}".format(event))
+            result[key] = target
+    return dict(sorted(result.items()))
+
+
 def build(project_root):
     retained = json.loads((project_root / "mapping" / "retained_vehicles.json").read_text(encoding="utf-8"))
     calibers = json.loads((project_root / "mapping" / "calibers.json").read_text(encoding="utf-8"))
@@ -148,9 +167,14 @@ def runtime_data(whitelist):
 
 def main():
     project_root = Path(__file__).resolve().parents[1]
+    mod_version = (project_root / "VERSION").read_text(encoding="utf-8").strip()
+    if not mod_version:
+        raise RuntimeError("VERSION is empty")
+    calibers = json.loads((project_root / "mapping" / "calibers.json").read_text(encoding="utf-8"))
     whitelist = build(project_root)
     injector_config = sound_event_injector_config(whitelist)
     runtime = runtime_data(whitelist)
+    current_events = current_event_map(calibers)
     mapping_root = project_root / "mapping"
     source_root = project_root / "src" / "configs"
     source_root.mkdir(parents=True, exist_ok=True)
@@ -158,8 +182,8 @@ def main():
     (source_root / "oldshoot_guns.json").write_text(json.dumps(injector_config, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     runtime_root = project_root / "src" / "scripts" / "client" / "gui" / "mods"
     runtime_root.mkdir(parents=True, exist_ok=True)
-    runtime_source = "VEHICLE_GUN_EVENTS = " + pprint.pformat(runtime, width=200, sort_dicts=True) + "\n"
-    (runtime_root / "oldshoot_data.py").write_text(runtime_source, encoding="utf-8")
+    runtime_source = "MOD_VERSION = " + repr(mod_version) + "\n\nCURRENT_GUN_EVENTS = " + pprint.pformat(current_events, width=200, sort_dicts=True) + "\n\nVEHICLE_GUN_EVENTS = " + pprint.pformat(runtime, width=200, sort_dicts=True) + "\n"
+    (runtime_root / "oldshoot_data.py").write_bytes(runtime_source.encode("utf-8"))
     print("Vehicles: {}".format(whitelist["vehicle_count"]))
     print("Guns: {}".format(whitelist["gun_count"]))
     print("Effects: {}".format(whitelist["effect_count"]))
