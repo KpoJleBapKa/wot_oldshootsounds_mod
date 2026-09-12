@@ -3,7 +3,7 @@
 ## Metadata
 
 - [ ] Replace `<AUTHOR>` in both page texts and moderation letters.
-- [ ] Confirm that the version generated from the root `VERSION` file is correct.
+- [ ] Confirm that the version generated from the current `v<version>` Git branch is correct.
 - [ ] Replace `<GAME_VERSION>`.
 - [ ] Replace `<SOURCE_URL>`.
 - [ ] Select the Sounds category.

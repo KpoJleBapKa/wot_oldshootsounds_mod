@@ -6,6 +6,8 @@ OldShootSounds restores gunshot audio from World of Tanks 1.29.1.1 in the curren
 
 The mod replaces recognized standard gunshots for every vehicle from Tier I through Tier X. It supports the player's vehicle, allied and enemy vehicles, arcade and sniper camera states, spatial positioning, and single- and double-barrel guns. Tier XI vehicles and unknown or special firing systems are left unchanged to prevent missing audio.
 
+Each gunshot is assembled dynamically from independently randomized historical sound layers, preserving the natural variation of the original audio instead of repeating a small set of complete recordings.
+
 The mod changes gunshots only. It does not replace engines, tracks, impacts, penetrations, ricochets, shell flybys, reloads, UI, crew voices, music, ambience, destruction, or artillery explosions.
 
 Current version: `1.1`.
@@ -61,6 +63,8 @@ Wait approximately 3–5 seconds between presses. Sounds are not forcibly stoppe
 OldShootSounds повертає звуки пострілів із World of Tanks 1.29.1.1 в актуальний клієнт World of Tanks.
 
 Мод замінює розпізнані стандартні звуки пострілів для всіх машин від I до X рівня. Підтримуються власна машина, союзники та противники, аркадний і снайперський режими камери, просторове позиціювання, звичайні та двоствольні гармати. Машини XI рівня, а також невідомі чи спеціальні системи стрільби залишаються без змін, щоб не спричинити зникнення звуку.
+
+Кожен постріл динамічно складається з незалежно рандомізованих історичних звукових шарів, тому мод зберігає природну варіативність оригіналу замість повторення невеликого набору готових записів.
 
 Мод змінює лише постріли гармат. Він не замінює двигуни, гусениці, влучання, пробиття, рикошети, проліт снаряда, перезаряджання, інтерфейс, голоси екіпажу, музику, оточення, руйнування чи вибухи артилерії.
 

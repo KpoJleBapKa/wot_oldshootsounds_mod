@@ -1,20 +1,14 @@
 import argparse
-import re
 import shutil
 import subprocess
 import zipfile
 from pathlib import Path
 
+from mod_version import read_version, sync_version_file
+
 
 def run(command):
     subprocess.run([str(value) for value in command], check=True)
-
-
-def read_version(project_root):
-    version = (project_root / "VERSION").read_text(encoding="utf-8").strip()
-    if not re.fullmatch(r"[0-9]+\.[0-9]+(?:\.[0-9]+)?(?:[-+][0-9A-Za-z.-]+)?", version):
-        raise RuntimeError("Invalid VERSION: {}".format(version))
-    return version
 
 
 def sync_runtime_version(path, version):
@@ -35,13 +29,14 @@ def build_wgmods_materials(project_root, version):
     target_root.mkdir(parents=True)
     for source in source_root.glob("*.md"):
         content = source.read_text(encoding="utf-8").replace("<MOD_VERSION>", version)
-        (target_root / source.name).write_text(content, encoding="utf-8")
+        (target_root / source.name).write_bytes(content.encode("utf-8"))
     return target_root
 
 
 def build(args):
     project_root = Path(__file__).resolve().parents[1]
     version = read_version(project_root)
+    sync_version_file(project_root, version)
     source_mods = project_root / "src" / "scripts" / "client" / "gui" / "mods"
     sync_runtime_version(source_mods / "oldshoot_data.py", version)
     compiler = project_root / "tools" / "compile_py2.py"

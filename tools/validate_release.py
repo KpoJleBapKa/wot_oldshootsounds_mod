@@ -9,6 +9,8 @@ import zipfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+from mod_version import read_version
+
 
 sys.dont_write_bytecode = True
 
@@ -267,8 +269,53 @@ def validate_installer(project_root):
             raise RuntimeError("Installer did not preserve the original audio_mods.xml backup")
 
 
+def validate_dynamic_audio(project_root, expected_events):
+    manifest = json.loads((project_root / "work" / "old_event_dynamic" / "manifest.json").read_text(encoding="utf-8"))
+    if manifest.get("format") != "dynamic-full-v1" or manifest.get("event_count") != len(expected_events):
+        raise RuntimeError("Dynamic audio manifest is invalid")
+    if manifest.get("media_items", 0) < 800:
+        raise RuntimeError("Full dynamic audio media set is missing")
+    manifest_events = {event["event"] for event in manifest["events"]}
+    if manifest_events != expected_events:
+        raise RuntimeError("Dynamic audio events do not match the whitelist")
+
+    def validate_node(node):
+        if node["kind"] == "sound":
+            if "wem" not in node:
+                raise RuntimeError("Dynamic audio sound has no source")
+            return
+        if node["kind"] not in {"random", "layer"} or not node.get("children"):
+            raise RuntimeError("Dynamic audio graph contains an invalid node")
+        for child in node["children"]:
+            validate_node(child)
+
+    for event in manifest["events"]:
+        for branch in event["branches"]:
+            root = branch["root"]
+            if root["kind"] != "layer":
+                raise RuntimeError("Dynamic audio branch has no layered structure")
+            validate_node(root)
+    hierarchy_path = project_root / "work" / "wwise_build" / "OldShootSounds" / "Actor-Mixer Hierarchy" / "Default Work Unit.wwu"
+    hierarchy = ET.parse(hierarchy_path).getroot()
+    random_nodes = hierarchy.findall(".//RandomSequenceContainer")
+    layer_nodes = hierarchy.findall(".//BlendContainer")
+    sound_nodes = hierarchy.findall(".//Sound")
+    if len(random_nodes) != manifest["nodes"]["random"] or len(layer_nodes) != manifest["nodes"]["layer"] or len(sound_nodes) != manifest["nodes"]["sound"]:
+        raise RuntimeError("Compiled Wwise hierarchy does not match the dynamic manifest")
+    for node in random_nodes:
+        properties = {item.get("Name"): item.get("Value") for item in node.findall("PropertyList/Property")}
+        child_count = len(node.findall("ChildrenList/*"))
+        expected_avoid = "true" if child_count > 1 else "false"
+        if properties.get("RandomOrSequence") != "1" or properties.get("NormalOrShuffle") != "1" or properties.get("RandomAvoidRepeating") != expected_avoid:
+            raise RuntimeError("Compiled Wwise random container has invalid playback properties")
+        if child_count > 1 and properties.get("RandomAvoidRepeatingCount") != str(child_count - 1):
+            raise RuntimeError("Compiled Wwise random container has invalid repetition limit")
+
+
 def validate(project_root):
-    version = (project_root / "VERSION").read_text(encoding="utf-8").strip()
+    version = read_version(project_root)
+    if (project_root / "VERSION").read_text(encoding="utf-8").strip() != version:
+        raise RuntimeError("VERSION is not synchronized with the current Git branch")
     whitelist = json.loads((project_root / "mapping" / "old_vehicle_guns.json").read_text(encoding="utf-8"))
     retained = json.loads((project_root / "mapping" / "retained_vehicles.json").read_text(encoding="utf-8"))
     retained_names = {record["id"].replace("/", ":", 1) for record in retained}
@@ -299,6 +346,7 @@ def validate(project_root):
     }
     if not required_dual_events.issubset(actual_events):
         raise RuntimeError("Required multi-gun SoundBank events are missing")
+    validate_dynamic_audio(project_root, expected_events)
     archive_path = project_root / "dist" / "OldShootSounds-{}.zip".format(version)
     required = {
         "OldShootSounds/Install-OldShootSounds.cmd",
@@ -340,6 +388,7 @@ def validate(project_root):
     print("Events: {}".format(len(actual_events)))
     print("Archive: OK")
     print("SoundBank WoT header: OK")
+    print("Dynamic layered audio: OK")
     print("Runtime isolation: OK")
     print("Hangar F8 test: OK")
     print("Clean and merged installation: OK")

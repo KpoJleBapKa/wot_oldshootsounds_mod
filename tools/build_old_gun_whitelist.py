@@ -2,6 +2,8 @@ import json
 import pprint
 from pathlib import Path
 
+from mod_version import read_version, sync_version_file
+
 
 def gun_location(path):
     marker = "/guns/"
@@ -167,9 +169,8 @@ def runtime_data(whitelist):
 
 def main():
     project_root = Path(__file__).resolve().parents[1]
-    mod_version = (project_root / "VERSION").read_text(encoding="utf-8").strip()
-    if not mod_version:
-        raise RuntimeError("VERSION is empty")
+    mod_version = read_version(project_root)
+    sync_version_file(project_root, mod_version)
     calibers = json.loads((project_root / "mapping" / "calibers.json").read_text(encoding="utf-8"))
     whitelist = build(project_root)
     injector_config = sound_event_injector_config(whitelist)

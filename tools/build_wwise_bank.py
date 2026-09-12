@@ -80,33 +80,67 @@ def add_reference(parent, name, object_name, object_id, work_unit_id):
     ET.SubElement(reference, "ObjectRef", {"Name": object_name, "ID": object_id, "WorkUnitID": work_unit_id})
 
 
-def group_renders(manifest):
-    events = defaultdict(lambda: defaultdict(list))
-    txtp_names = {}
-    for render in manifest["renders"]:
-        events[render["event"]][render["branch"]].append(render)
-        txtp_names[(render["event"], render["branch"])] = Path(render["txtp"]).name
-    return events, txtp_names
-
-
 def prepare_import(project_root, build_root, manifest):
-    events, txtp_names = group_renders(manifest)
-    audio_root = build_root / "audio_input"
-    audio_root.mkdir(parents=True, exist_ok=True)
+    if manifest.get("format") != "dynamic-full-v1":
+        raise RuntimeError("Full dynamic audio manifest is required")
+    events = defaultdict(dict)
+    txtp_names = {}
+    node_properties = {}
+    wav_root = Path(manifest["wav_root"])
     lines = ["Audio File\tObject Path\tObject Type"]
-    for event_name in sorted(events):
-        for branch in sorted(events[event_name]):
+    sequence = [0]
+
+    def emit(node, parent_path, name):
+        object_path = parent_path + "\\" + name
+        sequence[0] += 1
+        if node["kind"] == "sound":
+            audio_path = Path(node["wav"]) if "wav" in node else wav_root / (str(node["wem"]) + ".wav")
+            lines.append("{}\t{}\tSound SFX".format(audio_path, object_path))
+        else:
+            object_type = "Random Container" if node["kind"] == "random" else "Blend Container"
+            lines.append("\t{}\t{}".format(object_path, object_type))
+            for child in node["children"]:
+                emit(child, object_path, "n{:05d}".format(sequence[0]))
+        node_properties[name] = node
+
+    actor_root = "\\Actor-Mixer Hierarchy\\Default Work Unit"
+    for event in sorted(manifest["events"], key=lambda item: item["event"]):
+        event_name = event["event"]
+        for branch_record in sorted(event["branches"], key=lambda item: item["branch"]):
+            branch = branch_record["branch"]
+            events[event_name][branch] = branch_record
+            txtp_names[(event_name, branch)] = Path(branch_record["txtp"]).name
             container_name = "{}__branch_{:02d}".format(event_name, branch)
-            container_path = "\\Actor-Mixer Hierarchy\\Default Work Unit\\{}".format(container_name)
-            lines.append("\t{}\tRandom Container".format(container_path))
-            for render in sorted(events[event_name][branch], key=lambda item: item["variant"]):
-                sound_name = "{}_b{:02d}_v{:02d}".format(event_name, branch, render["variant"])
-                audio_path = audio_root / (sound_name + ".wav")
-                shutil.copy2(render["wav"], audio_path)
-                lines.append("{}\t{}\\{}\tSound SFX".format(audio_path, container_path, sound_name))
+            root = branch_record["root"]
+            if root["kind"] == "sound":
+                root = {"kind": "layer", "children": [root]}
+            emit(root, actor_root, container_name)
     import_path = build_root / "audio_import.tsv"
     import_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    return events, txtp_names, import_path
+    return events, txtp_names, node_properties, import_path
+
+
+def configure_dynamic_properties(project_root, node_properties):
+    path = project_root / "Actor-Mixer Hierarchy" / "Default Work Unit.wwu"
+    tree = ET.parse(path)
+    document = tree.getroot()
+    objects = {node.get("Name"): node for node in document.findall(".//*[@Name]")}
+    for name, data in node_properties.items():
+        node = objects.get(name)
+        if node is None:
+            raise RuntimeError("Imported audio object was not found: " + name)
+        if "volume" in data:
+            add_property(node, "Volume", "Real64", data["volume"])
+        if "delay" in data:
+            add_property(node, "InitialDelay", "Real64", data["delay"])
+        if data["kind"] == "random":
+            child_count = len(data["children"])
+            add_property(node, "RandomOrSequence", "int16", 1)
+            add_property(node, "NormalOrShuffle", "int16", 1)
+            add_property(node, "RandomAvoidRepeating", "bool", "true" if child_count > 1 else "false")
+            if child_count > 1:
+                add_property(node, "RandomAvoidRepeatingCount", "int32", child_count - 1)
+    write_xml(path, document)
 
 
 def create_states(project_root):
@@ -155,10 +189,36 @@ def obfuscate_bank_header(bank_path):
     bank = bytearray(bank_path.read_bytes())
     if bank[:4] != b"BKHD" or len(bank) < 24:
         raise RuntimeError("Invalid bank header")
+    values = {offset: struct.unpack_from("<I", bank, offset)[0] for offset in WOT_HEADER_XOR}
+    encoded = {offset: value ^ WOT_HEADER_XOR[offset] for offset, value in {8: 150, 16: 393239870, 20: 16}.items()}
+    if values == encoded:
+        return
+    if values != {8: 150, 16: 393239870, 20: 16}:
+        raise RuntimeError("Unknown bank header encoding")
     for offset, xor_key in WOT_HEADER_XOR.items():
         value = struct.unpack_from("<I", bank, offset)[0]
         struct.pack_into("<I", bank, offset, value ^ xor_key)
     bank_path.write_bytes(bank)
+
+
+def preserve_license(project_path, license_path):
+    if not project_path.is_file():
+        return
+    document = ET.parse(project_path).getroot()
+    for prop in document.findall(".//Property[@Name='LicenseKey']"):
+        value = prop.get("Value")
+        if value:
+            license_path.write_bytes(value.encode("utf-8"))
+            return
+
+
+def read_license(license_path):
+    if not license_path.is_file():
+        raise RuntimeError("Wwise license was not found. Apply it to the generated project first")
+    value = license_path.read_text(encoding="utf-8").strip()
+    if not value:
+        raise RuntimeError("Wwise license is empty")
+    return value
 
 
 def state_from_txtp(txtp_name):
@@ -271,17 +331,21 @@ def create_soundbank(project_root, event_ids, event_work_unit_id):
 
 def build(args):
     project_root = Path(__file__).resolve().parents[1]
-    manifest_path = project_root / "work" / "old_event_wav" / "manifest.json"
+    manifest_path = project_root / "work" / "old_event_dynamic" / "manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     build_root = project_root / "work" / "wwise_build"
     wwise_project_root = build_root / "OldShootSounds"
+    wwise_project = wwise_project_root / "OldShootSounds.wproj"
+    license_path = project_root / "work" / "wwise_license.txt"
+    preserve_license(wwise_project, license_path)
+    license_key = read_license(license_path)
     if build_root.exists():
         shutil.rmtree(build_root)
     build_root.mkdir(parents=True)
-    wwise_project = wwise_project_root / "OldShootSounds.wproj"
     run([args.wwise_console, "create-new-project", wwise_project, "--platform", "Windows", "--quiet"])
-    events, txtp_names, import_path = prepare_import(project_root, build_root, manifest)
+    events, txtp_names, node_properties, import_path = prepare_import(project_root, build_root, manifest)
     run([args.wwise_console, "tab-delimited-import", wwise_project, import_path, "--quiet"])
+    configure_dynamic_properties(wwise_project_root, node_properties)
     create_states(wwise_project_root)
     create_attenuations(wwise_project_root, project_root / "reference" / "9.13-Wot-gun-sounds-for-wot")
     set_vorbis_conversion(wwise_project_root)
@@ -289,7 +353,7 @@ def build(args):
     event_ids, event_work_unit_id = create_events(wwise_project_root, event_targets)
     create_soundbank(wwise_project_root, event_ids, event_work_unit_id)
     output_root = build_root / "GeneratedSoundBanks"
-    run([args.wwise_console, "generate-soundbank", wwise_project, "--platform", "Windows", "--bank", "oldshoot", "--soundbank-path", "Windows", output_root, "--root-output-path", output_root, "--clear-audio-file-cache", "--quiet"], maximum_return_code=2)
+    run([args.wwise_console, "generate-soundbank", wwise_project, "--license", license_key, "--platform", "Windows", "--bank", "oldshoot", "--soundbank-path", "Windows", output_root, "--root-output-path", output_root, "--clear-audio-file-cache", "--quiet"], maximum_return_code=2)
     bank_path = output_root / "oldshoot.bnk"
     if not bank_path.exists():
         bank_path = output_root / "Windows" / "oldshoot.bnk"

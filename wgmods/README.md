@@ -10,4 +10,4 @@ This directory contains text and preparation notes for publishing OldShootSounds
 - `submission-checklist.md` — final pre-submission checklist.
 - `screenshots.md` — suggested screenshots and captions.
 
-The root `VERSION` file is the version source of truth. Building the release creates `dist/OldShootSounds-<version>.zip` and copies these materials to `dist/WGMods/` with the mod-version placeholder already replaced. Replace the remaining values in angle brackets before submission.
+The current Git branch name is the version source of truth and must start with `v<version>`. Building the release synchronizes the root `VERSION` file, creates `dist/OldShootSounds-<version>.zip`, and copies these materials to `dist/WGMods/` with the mod-version placeholder already replaced. Replace the remaining values in angle brackets before submission.

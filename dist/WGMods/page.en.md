@@ -14,6 +14,8 @@ OldShootSounds brings the pre-2.0 World of Tanks gunshot sound set back to the c
 
 The mod replaces recognized standard firing categories for all vehicles from Tier I through Tier X. It supports the player's vehicle, allied and enemy vehicles, arcade and sniper camera modes, spatial positioning, and standard and double-barrel guns.
 
+Each shot is assembled dynamically from independently randomized historical sound layers, preserving natural variation instead of repeating a small set of complete recordings.
+
 Tier XI vehicles and unknown or special firing systems retain their current sounds. This safety rule prevents a new or unusual gun mechanic from becoming silent.
 
 Only gunshot events are changed. Engines, tracks, impacts, penetrations, non-penetrations, ricochets, shell flybys, reloads, UI, crew voices, music, ambience, destruction, and artillery explosions are not replaced.
