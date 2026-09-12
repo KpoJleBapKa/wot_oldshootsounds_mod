@@ -9,11 +9,12 @@ from debug_utils import LOG_CURRENT_EXCEPTION, LOG_NOTE
 from gui import InputHandler, SystemMessages
 from items import vehicles
 
-from gui.mods.oldshoot_data import VEHICLE_GUN_EVENTS
+from gui.mods.oldshoot_data import CURRENT_GUN_EVENTS, MOD_VERSION, VEHICLE_GUN_EVENTS
 
 
 _PATCHED_VEHICLES = set()
 _ORIGINAL_VEHICLE_TYPE_INIT = vehicles.VehicleType.__init__
+_MAX_LEGACY_SOUND_LEVEL = 10
 _TEST_EVENT_INDEX = 0
 _TEST_EVENTS = (
     'oldshoot_wpn_automatic_pc',
@@ -49,6 +50,37 @@ def _replace_shot_events(effects, player_event, npc_event):
     return cloned_effects
 
 
+def _mapped_shot_events(sound_names):
+    if not isinstance(sound_names, (list, tuple)):
+        return None
+    for side in sound_names:
+        names = side if isinstance(side, (list, tuple)) else (side,)
+        for name in names:
+            try:
+                events = CURRENT_GUN_EVENTS.get(name.lower())
+            except AttributeError:
+                events = None
+            if events is not None:
+                return events
+    return None
+
+
+def _replace_standard_shot_events(effects):
+    if effects is None or not hasattr(effects, 'effectsList'):
+        return effects, False
+    replacements = []
+    for descriptor in effects.effectsList.descriptors():
+        events = _mapped_shot_events(getattr(descriptor, '_soundName', None)) if getattr(descriptor, 'TYPE', None) == '_ShotSoundEffectDesc' else None
+        replacements.append(events)
+    if not any(replacements):
+        return effects, False
+    cloned_effects = copy.deepcopy(effects)
+    for descriptor, events in zip(cloned_effects.effectsList.descriptors(), replacements):
+        if events is not None:
+            descriptor._soundName = ((events[0],), (events[1],))
+    return cloned_effects, True
+
+
 def _copy_gun(gun, events):
     cloned_gun = gun.copy()
     if isinstance(events, dict):
@@ -64,16 +96,40 @@ def _copy_gun(gun, events):
     return cloned_gun
 
 
+def _copy_standard_gun(gun):
+    source_effects = gun.effects
+    if isinstance(source_effects, (list, tuple)):
+        effects = []
+        changed = False
+        for effect in source_effects:
+            cloned_effect, effect_changed = _replace_standard_shot_events(effect)
+            effects.append(cloned_effect)
+            changed = changed or effect_changed
+        if not changed:
+            return gun, False
+        cloned_gun = gun.copy()
+        cloned_gun.effects = effects
+        return cloned_gun, True
+    cloned_effects, changed = _replace_standard_shot_events(source_effects)
+    if not changed:
+        return gun, False
+    cloned_gun = gun.copy()
+    cloned_gun.effects = cloned_effects
+    return cloned_gun, True
+
+
 def _copy_turret(turret, configured_guns):
     changed = False
     guns = []
     for gun in turret.guns:
         events = configured_guns.get(gun.name)
-        if events is None or not isinstance(events, dict) and gun.effects is None:
-            guns.append(gun)
-        else:
+        if events is not None and (isinstance(events, dict) or gun.effects is not None):
             guns.append(_copy_gun(gun, events))
             changed = True
+        else:
+            cloned_gun, gun_changed = _copy_standard_gun(gun)
+            guns.append(cloned_gun)
+            changed = changed or gun_changed
     if not changed:
         return turret, False
     cloned_turret = turret.copy()
@@ -85,9 +141,10 @@ def _patch_vehicle(vehicle_type):
     identity = id(vehicle_type)
     if identity in _PATCHED_VEHICLES:
         return
-    configured_turrets = VEHICLE_GUN_EVENTS.get(vehicle_type.name)
-    if configured_turrets is None:
+    level = getattr(vehicle_type, 'level', None)
+    if level is None or level > _MAX_LEGACY_SOUND_LEVEL:
         return
+    configured_turrets = VEHICLE_GUN_EVENTS.get(vehicle_type.name, {})
     changed = False
     turret_groups = []
     for turret_group in vehicle_type.turrets:
@@ -133,7 +190,7 @@ def _install():
         except Exception:
             LOG_CURRENT_EXCEPTION()
     InputHandler.g_instance.onKeyDown += _on_test_key_down
-    LOG_NOTE('[OldShootSounds] whitelist loaded: %d vehicles' % len(VEHICLE_GUN_EVENTS))
+    LOG_NOTE('[OldShootSounds] version %s; tier I-X mode loaded; historical configurations: %d vehicles' % (MOD_VERSION, len(VEHICLE_GUN_EVENTS)))
 
 
 _install()

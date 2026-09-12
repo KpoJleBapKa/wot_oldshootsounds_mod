@@ -1,3 +1,28 @@
+MOD_VERSION = '1.1'
+
+CURRENT_GUN_EVENTS = {'wpn_automatic_npc': ('oldshoot_wpn_automatic_pc', 'oldshoot_wpn_automatic_npc'),
+ 'wpn_automatic_pc': ('oldshoot_wpn_automatic_pc', 'oldshoot_wpn_automatic_npc'),
+ 'wpn_huge_npc': ('oldshoot_wpn_huge_pc', 'oldshoot_wpn_huge_npc'),
+ 'wpn_huge_pc': ('oldshoot_wpn_huge_pc', 'oldshoot_wpn_huge_npc'),
+ 'wpn_large_dual_npc': ('oldshoot_wpn_large_dual_pc', 'oldshoot_wpn_large_dual_npc'),
+ 'wpn_large_dual_pc': ('oldshoot_wpn_large_dual_pc', 'oldshoot_wpn_large_dual_npc'),
+ 'wpn_large_extra_npc': ('oldshoot_wpn_large_extra_pc', 'oldshoot_wpn_large_extra_npc'),
+ 'wpn_large_extra_pc': ('oldshoot_wpn_large_extra_pc', 'oldshoot_wpn_large_extra_npc'),
+ 'wpn_large_npc': ('oldshoot_wpn_large_pc', 'oldshoot_wpn_large_npc'),
+ 'wpn_large_pc': ('oldshoot_wpn_large_pc', 'oldshoot_wpn_large_npc'),
+ 'wpn_main_dual_npc': ('oldshoot_wpn_main_dual_pc', 'oldshoot_wpn_main_dual_npc'),
+ 'wpn_main_dual_pc': ('oldshoot_wpn_main_dual_pc', 'oldshoot_wpn_main_dual_npc'),
+ 'wpn_main_extra_dual_npc': ('oldshoot_wpn_main_extra_dual_pc', 'oldshoot_wpn_main_extra_dual_npc'),
+ 'wpn_main_extra_dual_pc': ('oldshoot_wpn_main_extra_dual_pc', 'oldshoot_wpn_main_extra_dual_npc'),
+ 'wpn_main_extra_npc': ('oldshoot_wpn_main_extra_pc', 'oldshoot_wpn_main_extra_npc'),
+ 'wpn_main_extra_pc': ('oldshoot_wpn_main_extra_pc', 'oldshoot_wpn_main_extra_npc'),
+ 'wpn_main_npc': ('oldshoot_wpn_main_pc', 'oldshoot_wpn_main_npc'),
+ 'wpn_main_pc': ('oldshoot_wpn_main_pc', 'oldshoot_wpn_main_npc'),
+ 'wpn_meduim_npc': ('oldshoot_wpn_meduim_pc', 'oldshoot_wpn_meduim_npc'),
+ 'wpn_meduim_pc': ('oldshoot_wpn_meduim_pc', 'oldshoot_wpn_meduim_npc'),
+ 'wpn_small_npc': ('oldshoot_wpn_small_pc', 'oldshoot_wpn_small_npc'),
+ 'wpn_small_pc': ('oldshoot_wpn_small_pc', 'oldshoot_wpn_small_npc')}
+
 VEHICLE_GUN_EVENTS = {'china:Ch01_Type59': {'Turret_1_Ch01_Type59_2': {'_100mm_59': ('oldshoot_wpn_main_extra_pc', 'oldshoot_wpn_main_extra_npc')}},
  'china:Ch01_Type59_Gold': {'Turret_1_Ch01_Type59_gold': {'_100mm_59': ('oldshoot_wpn_main_extra_pc', 'oldshoot_wpn_main_extra_npc')}},
  'china:Ch02_Type62': {'Turret_1_Ch02_Type62': {'_85mm_Tip_62-85TS': ('oldshoot_wpn_main_pc', 'oldshoot_wpn_main_npc')}},
