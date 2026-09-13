@@ -152,6 +152,8 @@ def validate_runtime(project_root, whitelist, version):
     system_messages_module = types.ModuleType("gui.SystemMessages")
     system_messages_module.SM_TYPE = types.SimpleNamespace(Information=1)
     system_messages_module.pushMessage = lambda message, type: messages.append((message, type))
+    settings_module = types.ModuleType("gui.mods.oldshoot_settings")
+    settings_module.REPLACE_NPC_SOUNDS = True
     sys.modules["items"] = items_module
     sys.modules["items.vehicles"] = vehicles_module
     sys.modules["debug_utils"] = debug_module
@@ -160,6 +162,7 @@ def validate_runtime(project_root, whitelist, version):
     sys.modules["CurrentVehicle"] = current_vehicle_module
     sys.modules["gui.InputHandler"] = input_handler_module
     sys.modules["gui.SystemMessages"] = system_messages_module
+    sys.modules["gui.mods.oldshoot_settings"] = settings_module
     client_root = project_root / "src" / "scripts" / "client"
     sys.path.insert(0, str(client_root))
     try:
@@ -214,9 +217,12 @@ def validate_runtime(project_root, whitelist, version):
         raise RuntimeError("Hangar sound test was active outside the hangar")
     if not any("version {}".format(version) in str(entry) for entry in logs):
         raise RuntimeError("Runtime log does not contain the mod version")
+    module.REPLACE_NPC_SOUNDS = False
+    if module._replacement_sound_names((("current_pc",), ("current_npc_a", "current_npc_b")), "old_pc", "old_npc") != (("old_pc",), ("current_npc_a", "current_npc_b")):
+        raise RuntimeError("Player-only mode did not preserve current NPC events")
 
 
-def run_installer(project_root, game_root):
+def run_installer(project_root, game_root, sound_scope):
     installer = project_root / "dist" / "OldShootSounds" / "Install-OldShootSounds.ps1"
     result = subprocess.run([
         "powershell.exe",
@@ -227,6 +233,8 @@ def run_installer(project_root, game_root):
         str(installer),
         "-GameRoot",
         str(game_root),
+        "-SoundScope",
+        sound_scope,
     ], capture_output=True, text=True)
     if result.returncode != 0:
         raise RuntimeError("Installer failed: {}".format(result.stderr.strip()))
@@ -242,15 +250,18 @@ def validate_installer(project_root):
     with tempfile.TemporaryDirectory(prefix="oldshoot_clean_", dir=work_root) as directory:
         game_root = Path(directory)
         (game_root / "paths.xml").write_text('<root><Paths><Path cacheSubdirs="true">./res_mods/9.9.9.9</Path></Paths></root>', encoding="utf-8")
-        run_installer(project_root, game_root)
+        run_installer(project_root, game_root, "all")
         target_root = game_root / "res_mods" / "9.9.9.9"
         audio_root = target_root / "audioww"
         script_root = target_root / "scripts" / "client" / "gui" / "mods"
-        required = [audio_root / "oldshoot.bnk", script_root / "mod_oldshoot.pyc", script_root / "oldshoot_data.pyc"]
+        required = [audio_root / "oldshoot.bnk", script_root / "mod_oldshoot.pyc", script_root / "oldshoot_data.pyc", script_root / "oldshoot_settings.pyc"]
         if not all(path.is_file() for path in required):
             raise RuntimeError("Clean installation did not copy every payload file")
         if bank_names(audio_root / "audio_mods.xml") != ["oldshoot.bnk"]:
             raise RuntimeError("Clean installation created an invalid audio_mods.xml")
+        expected_settings = project_root / "dist" / "OldShootSounds" / "payload" / "options" / "all" / "oldshoot_settings.pyc"
+        if (script_root / "oldshoot_settings.pyc").read_bytes() != expected_settings.read_bytes():
+            raise RuntimeError("All-vehicles settings were not installed")
     with tempfile.TemporaryDirectory(prefix="oldshoot_merge_", dir=work_root) as directory:
         game_root = Path(directory)
         (game_root / "paths.xml").write_text('<root><Paths><Path cacheSubdirs="true">./res_mods/9.9.9.9</Path></Paths></root>', encoding="utf-8")
@@ -259,14 +270,18 @@ def validate_installer(project_root):
         audio_mods = audio_root / "audio_mods.xml"
         existing_xml = "<audio_mods.xml><loadBanks><bank><name>voiceover.bnk</name></bank><bank><name>other_mod.bnk</name></bank></loadBanks></audio_mods.xml>"
         audio_mods.write_text(existing_xml, encoding="utf-8")
-        run_installer(project_root, game_root)
-        run_installer(project_root, game_root)
+        run_installer(project_root, game_root, "all")
+        run_installer(project_root, game_root, "player")
         names = bank_names(audio_mods)
         if names != ["voiceover.bnk", "other_mod.bnk", "oldshoot.bnk"]:
             raise RuntimeError("Installer did not preserve or safely merge audio_mods.xml entries")
         backup = Path(str(audio_mods) + ".oldshoot.bak")
         if not backup.is_file() or bank_names(backup) != ["voiceover.bnk", "other_mod.bnk"]:
             raise RuntimeError("Installer did not preserve the original audio_mods.xml backup")
+        installed_settings = game_root / "res_mods" / "9.9.9.9" / "scripts" / "client" / "gui" / "mods" / "oldshoot_settings.pyc"
+        expected_settings = project_root / "dist" / "OldShootSounds" / "payload" / "options" / "player" / "oldshoot_settings.pyc"
+        if installed_settings.read_bytes() != expected_settings.read_bytes():
+            raise RuntimeError("Player-only settings were not installed")
 
 
 def validate_dynamic_audio(project_root, expected_events):
@@ -355,6 +370,8 @@ def validate(project_root):
         "OldShootSounds/payload/audioww/oldshoot.bnk",
         "OldShootSounds/payload/scripts/client/gui/mods/mod_oldshoot.pyc",
         "OldShootSounds/payload/scripts/client/gui/mods/oldshoot_data.pyc",
+        "OldShootSounds/payload/options/all/oldshoot_settings.pyc",
+        "OldShootSounds/payload/options/player/oldshoot_settings.pyc",
     }
     with zipfile.ZipFile(archive_path) as archive:
         archive_names = set(archive.namelist())
@@ -369,6 +386,10 @@ def validate(project_root):
         path = project_root / "dist" / "OldShootSounds" / "payload" / "scripts" / "client" / "gui" / "mods" / name
         if path.read_bytes()[:4] != b"\x03\xf3\x0d\x0a":
             raise RuntimeError("Invalid Python 2.7 bytecode header")
+    for scope in ("all", "player"):
+        path = project_root / "dist" / "OldShootSounds" / "payload" / "options" / scope / "oldshoot_settings.pyc"
+        if path.read_bytes()[:4] != b"\x03\xf3\x0d\x0a":
+            raise RuntimeError("Invalid Python 2.7 settings bytecode header")
     bank_path = project_root / "dist" / "OldShootSounds" / "payload" / "audioww" / "oldshoot.bnk"
     bank = bank_path.read_bytes()
     if bank[:4] != b"BKHD" or len(bank) < 24:

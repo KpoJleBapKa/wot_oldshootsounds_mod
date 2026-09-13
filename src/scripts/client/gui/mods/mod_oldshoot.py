@@ -10,6 +10,7 @@ from gui import InputHandler, SystemMessages
 from items import vehicles
 
 from gui.mods.oldshoot_data import CURRENT_GUN_EVENTS, MOD_VERSION, VEHICLE_GUN_EVENTS
+from gui.mods.oldshoot_settings import REPLACE_NPC_SOUNDS
 
 
 _PATCHED_VEHICLES = set()
@@ -42,11 +43,19 @@ _TEST_EVENTS = (
 )
 
 
+def _replacement_sound_names(sound_names, player_event, npc_event):
+    if REPLACE_NPC_SOUNDS:
+        return ((player_event,), (npc_event,))
+    if isinstance(sound_names, (list, tuple)) and len(sound_names) > 1:
+        return ((player_event,), sound_names[1])
+    return ((player_event,), ())
+
+
 def _replace_shot_events(effects, player_event, npc_event):
     cloned_effects = copy.deepcopy(effects)
     for descriptor in cloned_effects.effectsList.descriptors():
         if getattr(descriptor, 'TYPE', None) == '_ShotSoundEffectDesc':
-            descriptor._soundName = ((player_event,), (npc_event,))
+            descriptor._soundName = _replacement_sound_names(descriptor._soundName, player_event, npc_event)
     return cloned_effects
 
 
@@ -77,7 +86,7 @@ def _replace_standard_shot_events(effects):
     cloned_effects = copy.deepcopy(effects)
     for descriptor, events in zip(cloned_effects.effectsList.descriptors(), replacements):
         if events is not None:
-            descriptor._soundName = ((events[0],), (events[1],))
+            descriptor._soundName = _replacement_sound_names(descriptor._soundName, events[0], events[1])
     return cloned_effects, True
 
 
@@ -190,7 +199,8 @@ def _install():
         except Exception:
             LOG_CURRENT_EXCEPTION()
     InputHandler.g_instance.onKeyDown += _on_test_key_down
-    LOG_NOTE('[OldShootSounds] version %s; tier I-X mode loaded; historical configurations: %d vehicles' % (MOD_VERSION, len(VEHICLE_GUN_EVENTS)))
+    sound_scope = 'all vehicles' if REPLACE_NPC_SOUNDS else 'player vehicle only'
+    LOG_NOTE('[OldShootSounds] version %s; tier I-X mode loaded; scope: %s; historical configurations: %d vehicles' % (MOD_VERSION, sound_scope, len(VEHICLE_GUN_EVENTS)))
 
 
 _install()

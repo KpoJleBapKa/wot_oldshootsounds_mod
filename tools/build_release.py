@@ -41,16 +41,24 @@ def build(args):
     sync_runtime_version(source_mods / "oldshoot_data.py", version)
     compiler = project_root / "tools" / "compile_py2.py"
     compiled = project_root / "work" / "compiled"
-    compiled.mkdir(parents=True, exist_ok=True)
+    if compiled.exists():
+        shutil.rmtree(compiled)
+    compiled.mkdir(parents=True)
     runtime_path = "scripts/client/gui/mods/{}"
     for name in ("mod_oldshoot.py", "oldshoot_data.py"):
         destination = compiled / (name + "c")
         run([args.python2, "-S", compiler, source_mods / name, destination, runtime_path.format(name)])
+    settings_source = project_root / "src" / "settings"
+    for scope in ("all", "player"):
+        destination = compiled / "options" / scope / "oldshoot_settings.pyc"
+        destination.parent.mkdir(parents=True)
+        run([args.python2, "-S", compiler, settings_source / ("oldshoot_settings_{}.py".format(scope)), destination, runtime_path.format("oldshoot_settings.py")])
     release_root = project_root / "dist" / "OldShootSounds"
     if release_root.exists():
         shutil.rmtree(release_root)
     payload_mods = release_root / "payload" / "scripts" / "client" / "gui" / "mods"
     payload_audio = release_root / "payload" / "audioww"
+    payload_options = release_root / "payload" / "options"
     payload_mods.mkdir(parents=True)
     payload_audio.mkdir(parents=True)
     shutil.copy2(project_root / "installer" / "Install-OldShootSounds.ps1", release_root)
@@ -60,6 +68,7 @@ def build(args):
     shutil.copy2(project_root / "src" / "audioww" / "oldshoot.bnk", payload_audio)
     for compiled_file in compiled.glob("*.pyc"):
         shutil.copy2(compiled_file, payload_mods)
+    shutil.copytree(compiled / "options", payload_options)
     archive_path = project_root / "dist" / "OldShootSounds-{}.zip".format(version)
     legacy_archive_path = project_root / "dist" / "OldShootSounds.zip"
     if legacy_archive_path.exists():

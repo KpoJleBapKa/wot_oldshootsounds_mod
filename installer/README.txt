@@ -9,15 +9,19 @@ Installation:
 1. Close World of Tanks.
 2. Double-click Install-OldShootSounds.cmd.
 3. Select the World of Tanks root folder containing paths.xml, res, and res_mods.
-4. Start the game.
+4. Choose All tanks or My tank only.
+5. Start the game.
+
+Run the installer again to switch between the two sound modes.
 
 After every game update, run the installer again so the mod is copied to the new active version folder.
 
 Hangar test:
 Press F8 once every 3-5 seconds. The key cycles through 22 player, allied/enemy, standard, and double-barrel events. F8 is inactive outside the hangar. The playback result is written to game.log.
+The diagnostic tests all 22 bank events in both installation modes; player-only mode still leaves allied and enemy sounds unchanged in battle.
 
 Removal:
-Delete oldshoot.bnk, mod_oldshoot.pyc, and oldshoot_data.pyc from the active res_mods version. Remove only the oldshoot.bnk bank element from audioww/audio_mods.xml.
+Delete oldshoot.bnk, mod_oldshoot.pyc, oldshoot_data.pyc, and oldshoot_settings.pyc from the active res_mods version. Remove only the oldshoot.bnk bank element from audioww/audio_mods.xml.
 
 The installer preserves other audio_mods.xml entries. Another mod changing the same gunshot descriptors may still conflict depending on load order.
 
@@ -30,14 +34,18 @@ UKRAINIAN / УКРАЇНСЬКА
 1. Закрийте World of Tanks.
 2. Запустіть Install-OldShootSounds.cmd подвійним кліком.
 3. Виберіть кореневу папку World of Tanks, у якій знаходяться paths.xml, res і res_mods.
-4. Запустіть гру.
+4. Оберіть «Усі танки» або «Лише мій танк».
+5. Запустіть гру.
+
+Щоб перемкнути режим звуків, запустіть інсталятор повторно.
 
 Після кожного оновлення гри запустіть інсталятор повторно, щоб скопіювати мод до нової активної версійної папки.
 
 Перевірка в ангарі:
 Натискайте F8 раз на 3-5 секунд. Клавіша послідовно програє 22 події власних, союзних/ворожих, звичайних і двоствольних гармат. Поза ангаром F8 неактивна. Результат відтворення записується в game.log.
+Діагностика перевіряє всі 22 події банку в обох режимах; режим «лише мій танк» усе одно не змінює звуки союзників і противників у бою.
 
 Видалення:
-Видаліть oldshoot.bnk, mod_oldshoot.pyc і oldshoot_data.pyc з активної версії res_mods. Видаліть з audioww/audio_mods.xml лише елемент банку oldshoot.bnk.
+Видаліть oldshoot.bnk, mod_oldshoot.pyc, oldshoot_data.pyc і oldshoot_settings.pyc з активної версії res_mods. Видаліть з audioww/audio_mods.xml лише елемент банку oldshoot.bnk.
 
 Інсталятор зберігає інші записи audio_mods.xml. Інший мод, який змінює ті самі дескриптори пострілів, усе ще може конфліктувати залежно від порядку завантаження.

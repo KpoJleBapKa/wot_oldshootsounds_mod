@@ -24,6 +24,8 @@
 - [ ] Test installation with a clean `audio_mods.xml`.
 - [ ] Test installation when `audio_mods.xml` already contains other banks.
 - [ ] Confirm that installing twice creates only one `oldshoot.bnk` entry.
+- [ ] Test both the all-tanks and player-only installation choices.
+- [ ] Confirm that player-only mode preserves allied and enemy gunshot sounds.
 - [ ] Complete all 22 F8 events in the hangar.
 - [ ] Test player and enemy shots in a replay.
 - [ ] Test arcade and sniper camera modes.
