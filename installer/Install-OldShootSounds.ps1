@@ -1,9 +1,47 @@
 param(
-    [string]$GameRoot
+    [string]$GameRoot,
+    [ValidateSet("all", "player")]
+    [string]$SoundScope
 )
 
 $ErrorActionPreference = "Stop"
 $interactiveSelection = $false
+
+function Select-SoundScope {
+    Add-Type -AssemblyName System.Windows.Forms
+    Add-Type -AssemblyName System.Drawing
+    $form = New-Object System.Windows.Forms.Form
+    $form.Text = "OldShootSounds"
+    $form.StartPosition = "CenterScreen"
+    $form.FormBorderStyle = "FixedDialog"
+    $form.MaximizeBox = $false
+    $form.MinimizeBox = $false
+    $form.ClientSize = New-Object System.Drawing.Size(520, 175)
+
+    $label = New-Object System.Windows.Forms.Label
+    $label.Location = New-Object System.Drawing.Point(20, 18)
+    $label.Size = New-Object System.Drawing.Size(480, 46)
+    $label.Text = "Choose which vehicles should use the old gunshot sounds:`r`nОберіть, для яких танків застосовувати старі звуки пострілів:"
+    $form.Controls.Add($label)
+
+    $allButton = New-Object System.Windows.Forms.Button
+    $allButton.Location = New-Object System.Drawing.Point(20, 82)
+    $allButton.Size = New-Object System.Drawing.Size(230, 52)
+    $allButton.Text = "All tanks`r`nУсі танки"
+    $allButton.Add_Click({ $form.Tag = "all"; $form.Close() })
+    $form.Controls.Add($allButton)
+
+    $playerButton = New-Object System.Windows.Forms.Button
+    $playerButton.Location = New-Object System.Drawing.Point(270, 82)
+    $playerButton.Size = New-Object System.Drawing.Size(230, 52)
+    $playerButton.Text = "My tank only`r`nЛише мій танк"
+    $playerButton.Add_Click({ $form.Tag = "player"; $form.Close() })
+    $form.Controls.Add($playerButton)
+
+    $form.Add_FormClosed({ if ($null -eq $form.Tag) { $form.Tag = "cancel" } })
+    $form.ShowDialog() | Out-Null
+    return $form.Tag
+}
 
 if ([string]::IsNullOrWhiteSpace($GameRoot)) {
     Add-Type -AssemblyName System.Windows.Forms
@@ -16,6 +54,17 @@ if ([string]::IsNullOrWhiteSpace($GameRoot)) {
     }
     $GameRoot = $dialog.SelectedPath
     $interactiveSelection = $true
+}
+
+if ([string]::IsNullOrWhiteSpace($SoundScope)) {
+    if ($interactiveSelection) {
+        $SoundScope = Select-SoundScope
+        if ($SoundScope -eq "cancel") {
+            exit 0
+        }
+    } else {
+        $SoundScope = "all"
+    }
 }
 
 $resolvedGameRoot = (Resolve-Path -LiteralPath $GameRoot).Path
@@ -44,6 +93,7 @@ New-Item -ItemType Directory -Path $scriptsTarget -Force | Out-Null
 Copy-Item -LiteralPath (Join-Path $payloadRoot "audioww\oldshoot.bnk") -Destination $audioTarget -Force
 Copy-Item -LiteralPath (Join-Path $payloadRoot "scripts\client\gui\mods\mod_oldshoot.pyc") -Destination $scriptsTarget -Force
 Copy-Item -LiteralPath (Join-Path $payloadRoot "scripts\client\gui\mods\oldshoot_data.pyc") -Destination $scriptsTarget -Force
+Copy-Item -LiteralPath (Join-Path $payloadRoot "options\$SoundScope\oldshoot_settings.pyc") -Destination $scriptsTarget -Force
 
 $audioModsPath = Join-Path $audioTarget "audio_mods.xml"
 if (Test-Path -LiteralPath $audioModsPath) {
@@ -85,9 +135,11 @@ try {
 }
 
 Write-Host "OldShootSounds installed to $targetRoot"
+Write-Host "Sound scope: $SoundScope"
 Write-Host "Existing voiceover.bnk and other audio_mods.xml entries were preserved"
 
 if ($interactiveSelection) {
-    $message = "OldShootSounds was installed successfully." + [Environment]::NewLine + [Environment]::NewLine + $targetRoot
+    $scopeText = if ($SoundScope -eq "all") { "All tanks / Усі танки" } else { "My tank only / Лише мій танк" }
+    $message = "OldShootSounds was installed successfully." + [Environment]::NewLine + "Встановлення завершено." + [Environment]::NewLine + [Environment]::NewLine + $scopeText + [Environment]::NewLine + $targetRoot
     [System.Windows.Forms.MessageBox]::Show($message, "OldShootSounds", "OK", "Information") | Out-Null
 }

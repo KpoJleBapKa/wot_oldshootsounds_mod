@@ -4,13 +4,13 @@
 
 OldShootSounds restores gunshot audio from World of Tanks 1.29.1.1 in the current World of Tanks client.
 
-The mod replaces recognized standard gunshots for every vehicle from Tier I through Tier X. It supports the player's vehicle, allied and enemy vehicles, arcade and sniper camera states, spatial positioning, and single- and double-barrel guns. Tier XI vehicles and unknown or special firing systems are left unchanged to prevent missing audio.
+The mod replaces recognized standard gunshots for vehicles from Tier I through Tier X. During installation, you can apply the sounds to all vehicles or only to your own vehicle. It supports arcade and sniper camera states, spatial positioning, and single- and double-barrel guns. Tier XI vehicles and unknown or special firing systems are left unchanged to prevent missing audio.
 
 Each gunshot is assembled dynamically from independently randomized historical sound layers, preserving the natural variation of the original audio instead of repeating a small set of complete recordings.
 
 The mod changes gunshots only. It does not replace engines, tracks, impacts, penetrations, ricochets, shell flybys, reloads, UI, crew voices, music, ambience, destruction, or artillery explosions.
 
-Current version: `1.1`.
+Current version: `1.2`.
 
 ### Installation
 
@@ -18,7 +18,10 @@ Current version: `1.1`.
 2. Extract `OldShootSounds-<version>.zip`.
 3. Double-click `Install-OldShootSounds.cmd`.
 4. Select the World of Tanks root folder containing `paths.xml`, `res`, and `res_mods`.
-5. Start the game.
+5. Choose whether the old sounds should apply to all tanks or only to your own tank.
+6. Start the game.
+
+Run the installer again to switch modes. It replaces only the small settings file; reinstalling does not create a second copy of the sound bank.
 
 The installer automatically detects the active game version and preserves existing audio mods, including crew voiceovers and entries created by modpacks. Before changing the audio mod list for the first time, it creates an `audio_mods.xml.oldshoot.bak` backup.
 
@@ -32,6 +35,7 @@ Close the game and remove these files from the active `res_mods/<version>` direc
 audioww/oldshoot.bnk
 scripts/client/gui/mods/mod_oldshoot.pyc
 scripts/client/gui/mods/oldshoot_data.pyc
+scripts/client/gui/mods/oldshoot_settings.pyc
 ```
 
 Then remove only the `<bank>` element containing `<name>oldshoot.bnk</name>` from `audioww/audio_mods.xml`. Restore `audio_mods.xml.oldshoot.bak` only if no other installer has changed `audio_mods.xml` since OldShootSounds was installed.
@@ -49,6 +53,8 @@ Wait approximately 3–5 seconds between presses. Sounds are not forcibly stoppe
 
 `F8` testing is disabled outside the hangar. It verifies that the mod is installed and its sounds can be played. Spatial positioning and vehicle assignment must be tested in a replay or battle.
 
+The diagnostic always cycles through all 22 bank events, even in player-only mode. This does not mean allied or enemy sounds are replaced in battle.
+
 ### Compatibility and safety
 
 - Vehicles and guns that existed in 1.29.1.1 use their corresponding historical gunshot category.
@@ -62,13 +68,13 @@ Wait approximately 3–5 seconds between presses. Sounds are not forcibly stoppe
 
 OldShootSounds повертає звуки пострілів із World of Tanks 1.29.1.1 в актуальний клієнт World of Tanks.
 
-Мод замінює розпізнані стандартні звуки пострілів для всіх машин від I до X рівня. Підтримуються власна машина, союзники та противники, аркадний і снайперський режими камери, просторове позиціювання, звичайні та двоствольні гармати. Машини XI рівня, а також невідомі чи спеціальні системи стрільби залишаються без змін, щоб не спричинити зникнення звуку.
+Мод замінює розпізнані стандартні звуки пострілів машин від I до X рівня. Під час встановлення можна застосувати їх до всіх танків або лише до власного танка. Підтримуються аркадний і снайперський режими камери, просторове позиціювання, звичайні та двоствольні гармати. Машини XI рівня, а також невідомі чи спеціальні системи стрільби залишаються без змін, щоб не спричинити зникнення звуку.
 
 Кожен постріл динамічно складається з незалежно рандомізованих історичних звукових шарів, тому мод зберігає природну варіативність оригіналу замість повторення невеликого набору готових записів.
 
 Мод змінює лише постріли гармат. Він не замінює двигуни, гусениці, влучання, пробиття, рикошети, проліт снаряда, перезаряджання, інтерфейс, голоси екіпажу, музику, оточення, руйнування чи вибухи артилерії.
 
-Поточна версія: `1.1`.
+Поточна версія: `1.2`.
 
 ### Встановлення
 
@@ -76,7 +82,10 @@ OldShootSounds повертає звуки пострілів із World of Tank
 2. Розпакуйте `OldShootSounds-<версія>.zip`.
 3. Запустіть подвійним кліком `Install-OldShootSounds.cmd`.
 4. Виберіть кореневу папку World of Tanks, у якій знаходяться `paths.xml`, `res` і `res_mods`.
-5. Запустіть гру.
+5. Оберіть, чи застосовувати старі звуки до всіх танків, чи лише до власного танка.
+6. Запустіть гру.
+
+Щоб перемкнути режим, запустіть інсталятор повторно. Він замінить лише невеликий файл налаштування і не створюватиме другу копію звукового банку.
 
 Інсталятор автоматично визначає активну версію гри та зберігає наявні звукові моди, включно з озвученням екіпажу і записами модпаків. Перед першою зміною списку звукових модів створюється резервна копія `audio_mods.xml.oldshoot.bak`.
 
@@ -90,6 +99,7 @@ OldShootSounds повертає звуки пострілів із World of Tank
 audioww/oldshoot.bnk
 scripts/client/gui/mods/mod_oldshoot.pyc
 scripts/client/gui/mods/oldshoot_data.pyc
+scripts/client/gui/mods/oldshoot_settings.pyc
 ```
 
 Після цього видаліть з `audioww/audio_mods.xml` лише елемент `<bank>`, який містить `<name>oldshoot.bnk</name>`. Відновлюйте `audio_mods.xml.oldshoot.bak` тільки якщо після встановлення OldShootSounds жоден інший інсталятор не змінював `audio_mods.xml`.
@@ -106,6 +116,8 @@ scripts/client/gui/mods/oldshoot_data.pyc
 Між натисканнями зачекайте приблизно 3–5 секунд. Звуки примусово не зупиняються, тому при швидких натисканнях вони можуть накладатися. Після звуку №22 послідовність починається знову. Назва й номер звуку показуються системним повідомленням і записуються в `game.log`.
 
 Поза ангаром тестування через `F8` вимкнене. Воно перевіряє, що мод установлений і його звуки відтворюються. Просторове позиціювання і призначення конкретним машинам потрібно перевіряти в реплеї або бою.
+
+Діагностика завжди перебирає всі 22 події банку, навіть у режимі «лише мій танк». Це не означає, що в бою підміняються звуки союзників або противників.
 
 ### Сумісність і безпека
 
