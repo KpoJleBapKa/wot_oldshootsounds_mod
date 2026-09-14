@@ -6,11 +6,11 @@ OldShootSounds restores gunshot audio from World of Tanks 1.29.1.1 in the curren
 
 The mod replaces recognized standard gunshots for vehicles from Tier I through Tier X. During installation, you can apply the sounds to all vehicles or only to your own vehicle. It supports arcade and sniper camera states, spatial positioning, and single- and double-barrel guns. Tier XI vehicles and unknown or special firing systems are left unchanged to prevent missing audio.
 
-Each gunshot is assembled dynamically from independently randomized historical sound layers, preserving the natural variation of the original audio instead of repeating a small set of complete recordings.
+Each gunshot uses the complete historical playback structure: its original layers, random selections, variations, delays, camera-state behavior, and attenuation are preserved instead of being reconstructed approximately.
 
 The mod changes gunshots only. It does not replace engines, tracks, impacts, penetrations, ricochets, shell flybys, reloads, UI, crew voices, music, ambience, destruction, or artillery explosions.
 
-Current version: `1.2`.
+Current version: `1.3`.
 
 ### Installation
 
@@ -70,11 +70,11 @@ OldShootSounds повертає звуки пострілів із World of Tank
 
 Мод замінює розпізнані стандартні звуки пострілів машин від I до X рівня. Під час встановлення можна застосувати їх до всіх танків або лише до власного танка. Підтримуються аркадний і снайперський режими камери, просторове позиціювання, звичайні та двоствольні гармати. Машини XI рівня, а також невідомі чи спеціальні системи стрільби залишаються без змін, щоб не спричинити зникнення звуку.
 
-Кожен постріл динамічно складається з незалежно рандомізованих історичних звукових шарів, тому мод зберігає природну варіативність оригіналу замість повторення невеликого набору готових записів.
+Кожен постріл використовує повну історичну структуру відтворення: збережено оригінальні шари, випадковий вибір, варіації, затримки, поведінку для режимів камери та просторове згасання замість приблизного відтворення цієї логіки.
 
 Мод змінює лише постріли гармат. Він не замінює двигуни, гусениці, влучання, пробиття, рикошети, проліт снаряда, перезаряджання, інтерфейс, голоси екіпажу, музику, оточення, руйнування чи вибухи артилерії.
 
-Поточна версія: `1.2`.
+Поточна версія: `1.3`.
 
 ### Встановлення
 

@@ -1,4 +1,4 @@
-# Moderation message — English
+﻿# Moderation message — English
 
 Hello,
 
@@ -10,7 +10,7 @@ The mod supports player, allied, enemy, and double-barrel gunfire. Tier XI vehic
 
 All embedded audio was derived from Wargaming's official World of Tanks client. The archive contains no audio from other mods, no crew voiceovers, no third-party collaboration audio, no native executable, no network functionality, no telemetry, and no advertising. The included CMD file only launches the readable PowerShell installation script. The script detects the active game version, copies the mod files, and merges one SoundBank entry into `audio_mods.xml` while preserving entries from other mods.
 
-The project source is available at `<SOURCE_URL>`. Mod version: `1.2`. Supported World of Tanks version: `<GAME_VERSION>`.
+The project source is available at `<SOURCE_URL>`. Mod version: `1.3`. Supported World of Tanks version: `<GAME_VERSION>`.
 
 Please let me know if the archive layout, attribution, source availability, or installation method should be adjusted for Mod Hub requirements.
 

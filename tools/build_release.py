@@ -4,6 +4,7 @@ import subprocess
 import zipfile
 from pathlib import Path
 
+from clone_reference_bank import build as clone_reference_bank
 from mod_version import read_version, sync_version_file
 
 
@@ -37,6 +38,19 @@ def build(args):
     project_root = Path(__file__).resolve().parents[1]
     version = read_version(project_root)
     sync_version_file(project_root, version)
+    reference_audio = project_root / "reference" / "Reference"
+    source_audio = project_root / "src" / "audioww"
+    clone_reference_bank(
+        reference_audio / "wpn.bnk",
+        reference_audio / "wpn.pck",
+        source_audio / "oldshoot.bnk",
+        None,
+        "wpn",
+        True,
+    )
+    obsolete_package = source_audio / "oldshoot.pck"
+    if obsolete_package.exists():
+        obsolete_package.unlink()
     source_mods = project_root / "src" / "scripts" / "client" / "gui" / "mods"
     sync_runtime_version(source_mods / "oldshoot_data.py", version)
     compiler = project_root / "tools" / "compile_py2.py"
@@ -65,7 +79,7 @@ def build(args):
     shutil.copy2(project_root / "installer" / "Install-OldShootSounds.cmd", release_root)
     shutil.copy2(project_root / "installer" / "README.txt", release_root)
     shutil.copy2(project_root / "VERSION", release_root)
-    shutil.copy2(project_root / "src" / "audioww" / "oldshoot.bnk", payload_audio)
+    shutil.copy2(source_audio / "oldshoot.bnk", payload_audio)
     for compiled_file in compiled.glob("*.pyc"):
         shutil.copy2(compiled_file, payload_mods)
     shutil.copytree(compiled / "options", payload_options)
