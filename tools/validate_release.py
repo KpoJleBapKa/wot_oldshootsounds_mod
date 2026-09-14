@@ -9,6 +9,7 @@ import zipfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+import clone_reference_bank
 from mod_version import read_version
 
 
@@ -268,6 +269,7 @@ def validate_installer(project_root):
         audio_root = game_root / "res_mods" / "9.9.9.9" / "audioww"
         audio_root.mkdir(parents=True)
         audio_mods = audio_root / "audio_mods.xml"
+        (audio_root / "oldshoot.pck").write_bytes(b"obsolete")
         existing_xml = "<audio_mods.xml><loadBanks><bank><name>voiceover.bnk</name></bank><bank><name>other_mod.bnk</name></bank></loadBanks></audio_mods.xml>"
         audio_mods.write_text(existing_xml, encoding="utf-8")
         run_installer(project_root, game_root, "all")
@@ -275,6 +277,8 @@ def validate_installer(project_root):
         names = bank_names(audio_mods)
         if names != ["voiceover.bnk", "other_mod.bnk", "oldshoot.bnk"]:
             raise RuntimeError("Installer did not preserve or safely merge audio_mods.xml entries")
+        if (audio_root / "oldshoot.pck").exists():
+            raise RuntimeError("Installer did not remove the obsolete streamed package")
         backup = Path(str(audio_mods) + ".oldshoot.bak")
         if not backup.is_file() or bank_names(backup) != ["voiceover.bnk", "other_mod.bnk"]:
             raise RuntimeError("Installer did not preserve the original audio_mods.xml backup")
@@ -284,47 +288,44 @@ def validate_installer(project_root):
             raise RuntimeError("Player-only settings were not installed")
 
 
-def validate_dynamic_audio(project_root, expected_events):
-    manifest = json.loads((project_root / "work" / "old_event_dynamic" / "manifest.json").read_text(encoding="utf-8"))
-    if manifest.get("format") != "dynamic-full-v1" or manifest.get("event_count") != len(expected_events):
-        raise RuntimeError("Dynamic audio manifest is invalid")
-    if manifest.get("media_items", 0) < 800:
-        raise RuntimeError("Full dynamic audio media set is missing")
-    manifest_events = {event["event"] for event in manifest["events"]}
-    if manifest_events != expected_events:
-        raise RuntimeError("Dynamic audio events do not match the whitelist")
-
-    def validate_node(node):
-        if node["kind"] == "sound":
-            if "wem" not in node:
-                raise RuntimeError("Dynamic audio sound has no source")
-            return
-        if node["kind"] not in {"random", "layer"} or not node.get("children"):
-            raise RuntimeError("Dynamic audio graph contains an invalid node")
-        for child in node["children"]:
-            validate_node(child)
-
-    for event in manifest["events"]:
-        for branch in event["branches"]:
-            root = branch["root"]
-            if root["kind"] != "layer":
-                raise RuntimeError("Dynamic audio branch has no layered structure")
-            validate_node(root)
-    hierarchy_path = project_root / "work" / "wwise_build" / "OldShootSounds" / "Actor-Mixer Hierarchy" / "Default Work Unit.wwu"
-    hierarchy = ET.parse(hierarchy_path).getroot()
-    random_nodes = hierarchy.findall(".//RandomSequenceContainer")
-    layer_nodes = hierarchy.findall(".//BlendContainer")
-    sound_nodes = hierarchy.findall(".//Sound")
-    if len(random_nodes) != manifest["nodes"]["random"] or len(layer_nodes) != manifest["nodes"]["layer"] or len(sound_nodes) != manifest["nodes"]["sound"]:
-        raise RuntimeError("Compiled Wwise hierarchy does not match the dynamic manifest")
-    for node in random_nodes:
-        properties = {item.get("Name"): item.get("Value") for item in node.findall("PropertyList/Property")}
-        child_count = len(node.findall("ChildrenList/*"))
-        expected_avoid = "true" if child_count > 1 else "false"
-        if properties.get("RandomOrSequence") != "1" or properties.get("NormalOrShuffle") != "1" or properties.get("RandomAvoidRepeating") != expected_avoid:
-            raise RuntimeError("Compiled Wwise random container has invalid playback properties")
-        if child_count > 1 and properties.get("RandomAvoidRepeatingCount") != str(child_count - 1):
-            raise RuntimeError("Compiled Wwise random container has invalid repetition limit")
+def validate_reference_audio(project_root, expected_events):
+    source_root = project_root / "reference" / "Reference"
+    bank_path = project_root / "src" / "audioww" / "oldshoot.bnk"
+    with tempfile.TemporaryDirectory(prefix="oldshoot_audio_", dir=project_root / "work") as directory:
+        generated_bank = Path(directory) / "oldshoot.bnk"
+        summary = clone_reference_bank.build(source_root / "wpn.bnk", source_root / "wpn.pck", generated_bank, None, "wpn", True)
+        if generated_bank.read_bytes() != bank_path.read_bytes():
+            raise RuntimeError("Packaged audio does not match the reference clone")
+    if summary["hirc_objects"] != 1621 or summary["events"] != 23 or summary["media"] != 905 or summary["converted_streams"] != 996:
+        raise RuntimeError("Reference SoundBank structure is incomplete")
+    decoded = clone_reference_bank.decode_header(bank_path.read_bytes())
+    records = next(clone_reference_bank.hirc_records(payload) for tag, payload in clone_reference_bank.chunks(decoded) if tag == b"HIRC")
+    if any(payload[8] != 0 for object_type, payload in records if object_type == 2):
+        raise RuntimeError("Reference clone still contains streamed media")
+    actual_event_ids = {struct.unpack_from("<I", payload, 0)[0] for object_type, payload in records if object_type == 4}
+    expected_event_ids = {clone_reference_bank.short_id(event) for event in expected_events}
+    if not expected_event_ids.issubset(actual_event_ids):
+        raise RuntimeError("Reference clone is missing required gunshot events")
+    output_object_ids = {struct.unpack_from("<I", payload, 0)[0] for _, payload in records}
+    output_media_ids = set().union(*(clone_reference_bank.didx_ids(payload) for tag, payload in clone_reference_bank.chunks(decoded) if tag == b"DIDX"))
+    current_root = project_root / "work" / "banks" / "current"
+    for stem in ("Init", "fast_guns", "wpn"):
+        current_bank = current_root / (stem + ".bnk")
+        if not current_bank.is_file():
+            continue
+        current_decoded = clone_reference_bank.decode_header(current_bank.read_bytes())
+        current_records = []
+        for tag, payload in clone_reference_bank.chunks(current_decoded):
+            if tag == b"HIRC":
+                current_records.extend(clone_reference_bank.hirc_records(payload))
+        current_object_ids = {struct.unpack_from("<I", payload, 0)[0] for _, payload in current_records}
+        current_media_ids = set().union(*(clone_reference_bank.didx_ids(payload) for tag, payload in clone_reference_bank.chunks(current_decoded) if tag == b"DIDX"))
+        current_package = current_root / (stem + ".pck")
+        if current_package.is_file():
+            current_media_ids |= clone_reference_bank.package_ids(current_package)
+        if output_object_ids & (current_object_ids | current_media_ids) or output_media_ids & (current_object_ids | current_media_ids):
+            raise RuntimeError("Reference clone conflicts with the current {} bank".format(stem))
+    return expected_events
 
 
 def validate(project_root):
@@ -344,10 +345,7 @@ def validate(project_root):
     for data in whitelist["effects"].values():
         expected_events.add(data["player_event"])
         expected_events.add(data["npc_event"])
-    soundbanks_info = ET.parse(project_root / "work" / "wwise_build" / "GeneratedSoundBanks" / "SoundbanksInfo.xml")
-    actual_events = {node.get("Name") for node in soundbanks_info.findall(".//SoundBank[ShortName='oldshoot']/Events/Event")}
-    if actual_events != expected_events:
-        raise RuntimeError("SoundBank events do not match the whitelist")
+    actual_events = validate_reference_audio(project_root, expected_events)
     required_dual_vehicles = {"ussr:R165_Object_703_II", "uk:GB142_FV230_Canopener"}
     if not required_dual_vehicles.issubset(vehicle_names):
         raise RuntimeError("Required multi-gun vehicles are missing")
@@ -361,7 +359,6 @@ def validate(project_root):
     }
     if not required_dual_events.issubset(actual_events):
         raise RuntimeError("Required multi-gun SoundBank events are missing")
-    validate_dynamic_audio(project_root, expected_events)
     archive_path = project_root / "dist" / "OldShootSounds-{}.zip".format(version)
     required = {
         "OldShootSounds/Install-OldShootSounds.cmd",
@@ -380,6 +377,8 @@ def validate(project_root):
         forbidden = [name for name in archive_names if "voiceover" in name.lower() or Path(name).suffix.lower() in {".exe", ".dll"}]
         if forbidden:
             raise RuntimeError("Release archive contains forbidden files: {}".format(", ".join(forbidden)))
+        if "OldShootSounds/payload/audioww/oldshoot.pck" in archive_names:
+            raise RuntimeError("Release archive contains the obsolete streamed package")
         if archive.read("OldShootSounds/VERSION").decode("utf-8").strip() != version:
             raise RuntimeError("Release archive contains the wrong version")
     for name in ("mod_oldshoot.pyc", "oldshoot_data.pyc"):
@@ -409,7 +408,7 @@ def validate(project_root):
     print("Events: {}".format(len(actual_events)))
     print("Archive: OK")
     print("SoundBank WoT header: OK")
-    print("Dynamic layered audio: OK")
+    print("Reference playback structure: OK")
     print("Runtime isolation: OK")
     print("Hangar F8 test: OK")
     print("Clean and merged installation: OK")

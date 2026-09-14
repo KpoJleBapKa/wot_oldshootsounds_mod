@@ -87,10 +87,22 @@ $targetRoot = Join-Path $resolvedGameRoot $relativeResModsPath
 $audioTarget = Join-Path $targetRoot "audioww"
 $scriptsTarget = Join-Path $targetRoot "scripts\client\gui\mods"
 $payloadRoot = Join-Path $PSScriptRoot "payload"
+if (-not (Test-Path -LiteralPath $payloadRoot -PathType Container)) {
+    $repositoryPayload = Join-Path (Split-Path -Parent $PSScriptRoot) "dist\OldShootSounds\payload"
+    if (Test-Path -LiteralPath $repositoryPayload -PathType Container) {
+        $payloadRoot = $repositoryPayload
+    } else {
+        throw "OldShootSounds payload was not found. Extract the complete release archive before running the installer."
+    }
+}
 
 New-Item -ItemType Directory -Path $audioTarget -Force | Out-Null
 New-Item -ItemType Directory -Path $scriptsTarget -Force | Out-Null
 Copy-Item -LiteralPath (Join-Path $payloadRoot "audioww\oldshoot.bnk") -Destination $audioTarget -Force
+$obsoletePackage = Join-Path $audioTarget "oldshoot.pck"
+if (Test-Path -LiteralPath $obsoletePackage -PathType Leaf) {
+    Remove-Item -LiteralPath $obsoletePackage -Force
+}
 Copy-Item -LiteralPath (Join-Path $payloadRoot "scripts\client\gui\mods\mod_oldshoot.pyc") -Destination $scriptsTarget -Force
 Copy-Item -LiteralPath (Join-Path $payloadRoot "scripts\client\gui\mods\oldshoot_data.pyc") -Destination $scriptsTarget -Force
 Copy-Item -LiteralPath (Join-Path $payloadRoot "options\$SoundScope\oldshoot_settings.pyc") -Destination $scriptsTarget -Force

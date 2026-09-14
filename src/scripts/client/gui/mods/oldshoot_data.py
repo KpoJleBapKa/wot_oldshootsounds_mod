@@ -1,4 +1,4 @@
-MOD_VERSION = '1.2'
+MOD_VERSION = '1.3'
 
 CURRENT_GUN_EVENTS = {'wpn_automatic_npc': ('oldshoot_wpn_automatic_pc', 'oldshoot_wpn_automatic_npc'),
  'wpn_automatic_pc': ('oldshoot_wpn_automatic_pc', 'oldshoot_wpn_automatic_npc'),
